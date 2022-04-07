@@ -9,14 +9,20 @@ export default function Residences() {
             <div>
                 <img src={Slide} alt="" />
             </div>
-            <Intro
-                heading="Tribeca"
-                body="TriBeCa is an upscale residential neighborhood known for its cobblestone streets, post-industrial
-                vibe, and easy access to the Financial District and Lower Manhattan. Iris is situated around the
-                corner from City Hall Park and is moments from high-end dining and shopping options. One
-                World Trade Center, Brookfield Place, Rockefeller Park, and the Hudson River Greenway are all
-                close by. Nearby subway lines include the 1/2/3/4/5/A/C/E/R/W"
-            />
+
+
+            <div className="uk-section">
+                <div className="uk-container uk-container-small uk-text-center">
+                    <div>
+                        <h1 class="accent uk-heading-medium">Tribeca</h1>
+                        <p>TriBeCa is an upscale residential neighborhood known for its cobblestone streets, post-industrial
+                            vibe, and easy access to the Financial District and Lower Manhattan. Iris is situated around the
+                            corner from City Hall Park and is moments from high-end dining and shopping options. One
+                            World Trade Center, Brookfield Place, Rockefeller Park, and the Hudson River Greenway are all
+                            close by. Nearby subway lines include the 1/2/3/4/5/A/C/E/R/W</p>
+                    </div>
+                </div>
+            </div>
 
             <div className="uk-section">
                 <div className="uk-container">

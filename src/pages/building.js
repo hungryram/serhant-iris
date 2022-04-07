@@ -28,8 +28,8 @@ export default function Building() {
                     <div className="uk-container uk-container-large">
                         <div className="uk-flex uk-flex-center">
                             <div className="uk-width-2xlarge uk-text-center">
-                                <p className="uk-text-large">SCULPTED CURVES AND DAZZLING LOWER MANHATTAN VIEWS COALESCE AT IRIS TRIBECA, A SOARING RESIDENTIAL TOWER WHERE LIGHT AND FRESH AIR SUFFUSE TWENTY-FOUR STUNNING HALF AND FULL-FLOOR HOMES</p>
-                                <p>Brought to life by renowned architect Ismael Leyva Architects, IRIS TriBeCa offers every resident private outdoor space in one of the city's trendiest neighborhoods.</p>
+                                <p className="uk-text-large editable">SCULPTED CURVES AND DAZZLING LOWER MANHATTAN VIEWS COALESCE AT IRIS TRIBECA, A SOARING RESIDENTIAL TOWER WHERE LIGHT AND FRESH AIR SUFFUSE TWENTY-FOUR STUNNING HALF AND FULL-FLOOR HOMES</p>
+                                <p className="editable">Brought to life by renowned architect Ismael Leyva Architects, IRIS TriBeCa offers every resident private outdoor space in one of the city's trendiest neighborhoods.</p>
                                 <Link to="/" className="uk-button uk-button-secondary">Explore the residences</Link>
                             </div>
                         </div>

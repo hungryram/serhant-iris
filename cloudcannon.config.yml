@@ -1,13 +1,13 @@
 collections_config:
   data:
     path: "data"
-  blog:
-    path: "content/blog"
-    output: true
-    url: "content/blog/[slug]"
+    label: "Profile and Settings"
   pages:
     path: "content/pages"
     output: true
     url: "content/pages/[slug]"
+    _enabled_editors:
+      - visual
+      - content
 paths:
   uploads: /images

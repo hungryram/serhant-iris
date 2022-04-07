@@ -2,6 +2,7 @@ import * as React from "react"
 import Layout from "../components/Layout"
 import Hero from "../images/park-place-hero.jpg"
 import * as Styles from "../styles/contact.module.css"
+import contact from "../../data/profile.json"
 
 export default function Contact() {
 
@@ -19,11 +20,11 @@ export default function Contact() {
                             <div className={`uk-card uk-card-default uk-card-body ${Styles.radius}`}>
                                 <div className="uk-child-width-1-2@s" data-uk-grid>
                                     <div>
-                                    <h1 className="uk-heading-small accent uk-text-uppercase">Contact us</h1>
+                                    <h1 className="uk-heading-small accent uk-text-uppercase editable">Contact us</h1>
                                     </div>
                                     <div>
-                                        <a href="" className="uk-link-reset uk-text-uppercase">info@iristribeca.com</a> | <a href="" className="uk-link-reset uk-text-uppercase">646.54.66</a><br/>
-                                        <a href="" className="uk-link-reset uk-text-uppercase">19 Park Place</a>
+                                        <a href={`mailto: ${contact.contact_information.email}`} className="uk-link-reset uk-text-uppercase">{contact.contact_information.email}</a> | <a href={`tel: ${contact.contact_information.phone}`} className="uk-link-reset uk-text-uppercase">{contact.contact_information.phone}</a><br/>
+                                        <a href="" className="uk-link-reset uk-text-uppercase">{contact.contact_information.address} {contact.contact_information.city}, {contact.contact_information.state} {contact.contact_information.zip_code}</a>
                                     </div>
                                 </div>
                                 <form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true" className="uk-grid-small inquire__form" data-uk-grid action="/thank-you">
