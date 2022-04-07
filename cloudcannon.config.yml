@@ -5,7 +5,7 @@ collections_config:
   pages:
     path: "content/pages"
     output: true
-    url: "/content/[slug]"
+    url: "[slug]"
     _enabled_editors:
       - visual
       - content
