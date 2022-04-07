@@ -10,3 +10,8 @@ collections_config:
       - content
 paths:
   uploads: /images
+_inputs:
+  body:
+    type: markdown
+  logo:
+    type: image
