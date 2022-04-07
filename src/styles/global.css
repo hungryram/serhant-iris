@@ -25,14 +25,16 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: Cannes;
+    font-family: "Cannes";
 }
 
-body {
-    font-family: 'Montserrat';
+html body {
     color: #000;
-    font-weight: 300;
-    font-size: 16px;
+    font-size: 18px;
+    background-image: url("../images/bg2.png");
+    background-size: cover;
+    background-position: center;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .accent {
@@ -44,7 +46,8 @@ div a:hover {
     text-decoration: none;
 }
 
-a.uk-button.uk-button-primary {
+a.uk-button.uk-button-primary,
+button.uk-button.uk-button-primary {
     background: #8e91be;
     color: #fff;
     border-radius: 50px;
@@ -65,4 +68,14 @@ a.uk-button.uk-button-secondary {
 
 a.uk-slidenav-large svg {
     width: 60px;
+}
+
+body .uk-table-large td, body .uk-table-large th {
+    padding: 40px 12px;
+    text-align: center!important;
+}
+
+.uk-radio:checked,
+.uk-radio:checked:focus {
+    background-color: #8e91be;
 }
