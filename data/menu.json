@@ -1,0 +1,34 @@
+{
+    "menu": [
+      {
+        "name": "Building",
+        "link": "/building",
+        "menu": null
+      },
+      {
+        "name": "Residences",
+        "link": "/residences"
+      },
+      {
+        "name": "Amenities",
+        "link": "/amenities"
+      },
+      {
+        "name": "Neighborhood",
+        "link": "/neighborhood"
+      },
+      {
+        "name": "Availability",
+        "link": "/availability"
+      },
+      {
+        "name": "Team",
+        "link": "/team"
+      },
+      {
+        "name": "Contact",
+        "link": "/contact",
+        "menu": null
+      }
+    ]
+  }
