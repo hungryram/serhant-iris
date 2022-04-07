@@ -30,6 +30,8 @@ h4,
 h5,
 h6 {
     font-family: "Cannes";
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
 }
 
 html body {
@@ -39,6 +41,7 @@ html body {
     background-size: cover;
     background-position: center;
     font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
 }
 
 .accent {
