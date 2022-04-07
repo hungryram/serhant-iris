@@ -11,11 +11,13 @@ export default function Residences() {
             </div>
             <Intro
                 heading="Amenities"
-                body="Iris Tribeca greets residents with heated sidewalks and an atrium-style lobby that dazzles and
-                soothes with poured terrazzo flooring, rich oak-paneled walls, a 19-ft waterfall, and a custom
-                glass chandelier that dangles from soaring double-height ceilings. Thoughtful lifestyle
-                amenities like a fitness center, private lounge, and lush courtyard escape offer residents flexible
-                spaces to work, play, and entertain. Private storage is available for purchase."
+                body="Iris Tribeca greets residents with heated sidewalks and an atrium-style lobby 
+                that dazzles and soothes with a 19’ vein-cut limestone waterfall, hand-
+                crafted blown glass chandelier that dangles from soaring double-height 
+                ceilings, custom corten steel sculptures, rich oak-paneled walls, and poured 
+                terrazzo flooring. Thoughtful lifestyle amenities like a fitness center, private 
+                lounge, children’s area, and lush courtyard escape offer residents flexible 
+                spaces to work, play, and entertain. Private storage is available for purchase"
             />
 
             <div className="uk-section">

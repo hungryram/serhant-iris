@@ -8,6 +8,10 @@
     src: url(../fonts/Montserrat-ExtraLight.ttf) format('ttf');
 }
 
+* {
+    font-variant-ligatures: none;
+}
+
 .uk-h1,
 .uk-h2,
 .uk-h3,

@@ -14,11 +14,13 @@ export default function Contact() {
     return (
         <Layout>
             <div style={background}>
-                <div style={{ paddingTop: "40px", paddingBottom: "50px" }}>
+                <div className="uk-section">
+                    <div className="uk-container uk-container-large">
+                    <div style={{ paddingTop: "40px", paddingBottom: "50px" }}>
                     <div className="uk-child-width-1-2@m uk-flex-middle" data-uk-grid>
                         <div>
                             <div className={`uk-card uk-card-default uk-card-body ${Styles.radius}`}>
-                                <div className="uk-child-width-1-2@s" data-uk-grid>
+                                <div className="uk-child-width-1-2@m" data-uk-grid>
                                     <div>
                                     <h1 className="uk-heading-small accent uk-text-uppercase editable">Contact us</h1>
                                     </div>
@@ -88,6 +90,8 @@ export default function Contact() {
                                 </form>
                             </div>
                         </div>
+                    </div>
+                </div>
                     </div>
                 </div>
             </div>
