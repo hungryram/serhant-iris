@@ -1,0 +1,13 @@
+collections_config:
+  data:
+    path: "data"
+  blog:
+    path: "content/blog"
+    output: true
+    url: "content/blog/[slug]"
+  pages:
+    path: "content/pages"
+    output: true
+    url: "content/pages/[slug]"
+paths:
+  uploads: /images
