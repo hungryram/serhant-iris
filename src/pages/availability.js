@@ -4,17 +4,26 @@ import Intro from "../components/Intro"
 import Layout from "../components/Layout"
 import Slide from "../images/image.jpg"
 import { AiOutlineFilePdf } from "@react-icons/all-files/ai/AiOutlineFilePdf"
+import Hero from "../images/park-place-background.jpg"
 
 export default function Residences({ data }) {
     const content = data.markdownRemark.frontmatter
 
+    const background = {
+        backgroundImage: 'url(' + Hero + ')',
+        backgroundPosition: 'top',
+    };
+
     return (
 
         <Layout>
-            <div className="uk-section uk-animation-slide-bottom-small">
+            <div style={background}>
+                <div style={{ paddingTop: '100px', paddingBottom: '100px' }}>
+                <div className="uk-section uk-animation-slide-bottom-small" style={{ backgroundColor: "rgb(255 255 255 / 90%)" }}>
                 <div className="uk-section uk-text-center">
                     <div className="uk-container">
                         <h1 className="accent uk-heading-large">Availability</h1>
+                        <a href="" className="uk-h3 accent text-underline">Download PDF</a>
                     </div>
                 </div>
                 <div className="uk-container">
@@ -175,6 +184,8 @@ export default function Residences({ data }) {
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
                 </div>
             </div>
         </Layout>

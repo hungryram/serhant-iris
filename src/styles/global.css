@@ -36,15 +36,33 @@ h6 {
 
 html body {
     color: #000;
-    font-size: 16px;
+    font-size: 17px;
     background-image: url("../images/bg2.png");
     background-size: cover;
     background-position: center;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
+    font-weight: 500;
+    line-height: 1.8;
+}
+
+.uk-table th {
+    color: #000;
 }
 
 .accent {
+    color: #8e91be;
+}
+
+a:hover {
+    transition: .2s;
+}
+
+.text-underline {
+    text-decoration: underline;
+}
+
+a.uk-h3:hover {
+    text-decoration: underline;
     color: #8e91be;
 }
 

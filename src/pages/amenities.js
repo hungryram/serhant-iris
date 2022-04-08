@@ -1,5 +1,4 @@
 import * as React from "react"
-import Intro from "../components/Intro"
 import Layout from "../components/Layout"
 import Slide from "../images/image.jpg"
 
@@ -9,16 +8,21 @@ export default function Residences() {
             <div>
                 <img src={Slide} alt="" />
             </div>
-            <Intro
-                heading="Amenities"
-                body="Iris Tribeca greets residents with heated sidewalks and an atrium-style lobby 
-                that dazzles and soothes with a 19’ vein-cut limestone waterfall, hand-
-                crafted blown glass chandelier that dangles from soaring double-height 
-                ceilings, custom corten steel sculptures, rich oak-paneled walls, and poured 
-                terrazzo flooring. Thoughtful lifestyle amenities like a fitness center, private 
-                lounge, children’s area, and lush courtyard escape offer residents flexible 
-                spaces to work, play, and entertain. Private storage is available for purchase"
-            />
+
+            <div className="uk-section">
+                <div className="uk-container uk-container-small uk-text-center">
+                    <div>
+                        <h1 className="accent uk-heading-medium editable">Amenities</h1>
+                        <p className="editable">Iris Tribeca greets residents with heated sidewalks and an atrium-style lobby
+                            that dazzles and soothes with a 19’ vein-cut limestone waterfall, hand-
+                            crafted blown glass chandelier that dangles from soaring double-height
+                            ceilings, custom corten steel sculptures, rich oak-paneled walls, and poured
+                            terrazzo flooring. Thoughtful lifestyle amenities like a fitness center, private
+                            lounge, children’s area, and lush courtyard escape offer residents flexible
+                            spaces to work, play, and entertain. Private storage is available for purchase</p>
+                    </div>
+                </div>
+            </div>
 
             <div className="uk-section">
                 <div className="uk-container">

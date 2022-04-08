@@ -1,9 +1,8 @@
 ---
 title: Team
 search_engine_optimization:
-  meta_description: Meet the team who have brought the vision of The Westly to The
-    Upper West Side. ODA Architecture, Adam America, Northlink Capital, and SERHANT.
-  title_tag: Team | The Westly
+  meta_description: The team that brings you IRIS Tribeca
+  title_tag: Team | IRIS Tribeca
 team:
 - body: Adam America Real Estate (AARE) is one of New York City’s most active residential
     developers with over 32 renovation and development projects launched since 2009.
