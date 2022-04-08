@@ -13,7 +13,7 @@ export default function Building() {
         <Layout>
             <div style={background}>
                 <div className="uk-section uk-section-large uk-position-relative hero-section">
-                    <div className="uk-container uk-container-large">
+                    <div className="uk-container uk-container-large uk-animation-slide-bottom-small">
                         <div className="uk-flex uk-flex-left">
                             <div className="uk-width-2xlarge uk-text-center">
                                 <p className="uk-text-uppercase editable">Welcome to</p>
