@@ -51,6 +51,12 @@ export default function Residences() {
                     </div>
                 </div>
             </div>
+
+            <div className="uk-section">
+                <div className="uk-container">
+                    <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1S8y99ab_daQQHKAZ-gPp6-Qqb9erhELT&ehbc=2E312F" height="480" style={{ width: '100%' }}></iframe>
+                </div>
+            </div>
         </Layout>
     )
 }
