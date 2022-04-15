@@ -7,7 +7,7 @@ export default function Team({ data }) {
     const content = data.markdownRemark.frontmatter
     return (
         <Layout>
-            <div className="uk-section">
+            <div className="uk-section uk-animation-slide-bottom-small">
                 <div className="uk-container">
                     <h1 className="accent uk-heading-medium uk-text-center">The Team</h1>
                     <div className="uk-margin-large-top">

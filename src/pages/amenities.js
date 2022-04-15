@@ -5,7 +5,7 @@ import Slide from "../images/image.jpg"
 export default function Residences() {
     return (
         <Layout>
-            <div>
+            <div className="uk-animation-slide-bottom-small">
                 <img src={Slide} alt="" />
             </div>
 
