@@ -54,7 +54,9 @@ export default function Residences() {
 
             <div className="uk-section">
                 <div className="uk-container">
-                    <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1S8y99ab_daQQHKAZ-gPp6-Qqb9erhELT&ehbc=2E312F" height="480" style={{ width: '100%' }}></iframe>
+                    <div style={{ height: '500px', overflow: 'hidden' }}>
+                        <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1S8y99ab_daQQHKAZ-gPp6-Qqb9erhELT&ehbc=2E312F" frameBorder={0} height="480" style={{ width: '100%', border: '0', marginTop: '-60px', filter: 'hue-rotate(35deg)' }}></iframe>
+                    </div>
                 </div>
             </div>
         </Layout>
