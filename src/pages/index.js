@@ -18,7 +18,7 @@ export default function Building() {
                             <div className="uk-width-2xlarge uk-text-center">
                                 <p className="uk-text-uppercase editable">Welcome to</p>
                                 <h1 className="uk-heading-medium uk-margin-remove editable">Tribecas Newest<br />Luxury Tower</h1>
-                                <p className="editable">STUDIO - 3 BEDROOMS STARTING AT $1.325M</p>
+                                <p className="editable">STUDIO - 3 BEDROOMS STARTING AT $1,150,000</p>
                                 <Link to="/" className="uk-button uk-button-primary">Schedule a Showing</Link>
                             </div>
                         </div>
