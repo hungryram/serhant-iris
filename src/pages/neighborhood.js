@@ -1,7 +1,7 @@
 import * as React from "react"
 import Intro from "../components/Intro"
 import Layout from "../components/Layout"
-import Slide from "../images/image.jpg"
+import Main from "../images/Dorothy-Hong_Tribeca_12-2013_1807.jpg"
 import Art from "../images/art-and-culture.png"
 import Dining from "../images/Dining.png"
 import Health from "../images/health-and-fitness.png"
@@ -11,7 +11,7 @@ export default function Residences() {
     return (
         <Layout>
             <div className="uk-animation-slide-bottom-small">
-                <img src={Slide} alt="" />
+                <img src={Main} alt="" />
             </div>
 
 
