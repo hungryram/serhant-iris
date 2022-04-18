@@ -1,5 +1,4 @@
 import * as React from "react"
-import Intro from "../components/Intro"
 import Layout from "../components/Layout"
 import Main from "../images/Dorothy-Hong_Tribeca_12-2013_1807.jpg"
 import Art from "../images/art-and-culture.png"
@@ -31,7 +30,7 @@ export default function Residences() {
             <div className="uk-section">
                 <div className="uk-container">
                     <div style={{ height: '500px', overflow: 'hidden' }}>
-                        <iframe src="https://www.google.com/maps/d/embed?mid=1nbOckeQVVLt4Pt1BpFGinktyDJMKvP0d&ehbc=2E312F" frameBorder={0} height="480" style={{ width: '100%', border: '0', marginTop: '-70px', filter: 'hue-rotate(35deg)' }}></iframe>
+                        <iframe src="https://www.google.com/maps/d/embed?mid=1nbOckeQVVLt4Pt1BpFGinktyDJMKvP0d&ehbc=2E312F" title="Google Map Iris Tribeca Neighborhood" frameBorder={0} height="480" style={{ width: '100%', border: '0', marginTop: '-70px', filter: 'hue-rotate(35deg)' }}></iframe>
                     </div>
                 </div>
             </div>
