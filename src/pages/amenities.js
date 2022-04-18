@@ -19,7 +19,7 @@ export default function Residences() {
                             ceilings, custom corten steel sculptures, rich oak-paneled walls, and poured
                             terrazzo flooring. Thoughtful lifestyle amenities like a fitness center, private
                             lounge, children’s area, and lush courtyard escape offer residents flexible
-                            spaces to work, play, and entertain. Private storage is available for purchase</p>
+                            spaces to work, play, and entertain. Private storage is available for purchase.</p>
                     </div>
                 </div>
             </div>

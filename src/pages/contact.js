@@ -17,10 +17,10 @@ export default function Contact() {
                 <div className="uk-section">
                     <div className="uk-container uk-container-large">
                     <div style={{ paddingTop: "40px", paddingBottom: "50px" }}>
-                    <div className="uk-child-width-1-2@m uk-flex-middle uk-animation-slide-bottom-small" data-uk-grid>
-                        <div>
+                    <div className="uk-flex-middle uk-animation-slide-bottom-small" data-uk-grid>
+                        <div className="uk-width-3-5@m">
                             <div className={`uk-card uk-card-default uk-card-body ${Styles.radius}`}>
-                                <div className="uk-child-width-1-2@m" data-uk-grid>
+                                <div className="uk-child-width-1-2@m uk-grid-small" data-uk-grid>
                                     <div>
                                     <h1 className="uk-heading-small accent uk-text-uppercase editable">Contact us</h1>
                                     </div>
@@ -63,10 +63,11 @@ export default function Contact() {
                                         <div className="uk-margin">
                                             <div><p>I am interested in*</p></div>
                                             <div className="uk-form-controls">
-                                                <label><input className="uk-radio" type="radio" value="2 Bedrooms" name="Interested in" /> 2 Bedrooms</label><br />
+                                                <label><input className="uk-radio" type="radio" value="Studio" name="Interested in" /> Studio</label><br />
+                                                <label><input className="uk-radio" type="radio" value="1 Bedroom" name="Interested in" /> 1 Bedroom</label><br />
+                                                <label><input className="uk-radio" type="radio" value="2 Bedrooms" name="Interested in" /> 2 Bedroom</label><br />
                                                 <label><input className="uk-radio" type="radio" value="3 Bedrooms" name="Interested in" /> 3 Bedrooms</label><br />
-                                                <label><input className="uk-radio" type="radio" value="4 Bedrooms" name="Interested in" /> 4 Bedrooms</label><br />
-                                                <label><input className="uk-radio" type="radio" value="5 Bedrooms" name="Interested in" /> 5 Bedrooms</label><br />
+                                                <label><input className="uk-radio" type="radio" value="Penthouse" name="Interested in" /> Penthouse</label><br />
                                             </div>
                                         </div>
                                     </div>
@@ -74,10 +75,10 @@ export default function Contact() {
                                         <div className="uk-margin">
                                             <div><p>Price Range*</p></div>
                                             <div className="uk-form-controls">
-                                                <label><input className="uk-radio" type="radio" value="$2M to $3M" name="Price Range" /> $2M to $3M</label><br />
-                                                <label><input className="uk-radio" type="radio" value="$2M to $3M" name="Price Range" /> $2M to $3M</label><br />
-                                                <label><input className="uk-radio" type="radio" value="$5M to $7M" name="Price Range" /> $5M to $7M</label><br />
-                                                <label><input className="uk-radio" type="radio" value="$7M+" name="Price Range" /> $7M+</label><br />
+                                                <label><input className="uk-radio" type="radio" value="$1,150,000 - $1,500,000" name="Price Range" /> $1,150,000 - $1,500,000</label><br />
+                                                <label><input className="uk-radio" type="radio" value="$1,500,000 - $2,000,000" name="Price Range" /> $1,500,000 - $2,000,000</label><br />
+                                                <label><input className="uk-radio" type="radio" value="$2,000,000 - $2,500,000" name="Price Range" /> $2,000,000 - $2,500,000</label><br />
+                                                <label><input className="uk-radio" type="radio" value="$3,000,000 +" name="Price Range" /> $3,000,000 +</label><br />
                                             </div>
                                         </div>
                                     </div>

@@ -2,9 +2,11 @@ import { graphql } from "gatsby"
 import * as React from "react"
 import Layout from "../components/Layout"
 import * as Styles from "../styles/team.module.css"
+import showdown from "showdown"
 
 export default function Team({ data }) {
     const content = data.markdownRemark.frontmatter
+    const converter = new showdown.Converter();
     return (
         <Layout>
             <div className="uk-section uk-animation-slide-bottom-small">
@@ -18,7 +20,7 @@ export default function Team({ data }) {
                                         <div className={`uk-card uk-card-body uk-text-center ${Styles.cardDefault}`}>
                                             <h2 className="uk-h1 accent">{node.heading}</h2>
                                             <p className="uk-text-uppercase">{node.subheading}</p>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere architecto, atque voluptate alias, velit est autem voluptates adipisci error neque nesciunt culpa aut. Aspernatur ut nam dicta quis vero facilis.</p>
+                                            <div dangerouslySetInnerHTML={{ __html: converter.makeHtml(node.body) }} />
                                         </div>
                                     </div>
                                 )

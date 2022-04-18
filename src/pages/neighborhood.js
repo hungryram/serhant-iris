@@ -2,6 +2,10 @@ import * as React from "react"
 import Intro from "../components/Intro"
 import Layout from "../components/Layout"
 import Slide from "../images/image.jpg"
+import Art from "../images/art-and-culture.png"
+import Dining from "../images/Dining.png"
+import Health from "../images/health-and-fitness.png"
+import Education from "../images/Education-Pace-University.png"
 
 export default function Residences() {
     return (
@@ -15,39 +19,11 @@ export default function Residences() {
                 <div className="uk-container uk-container-small uk-text-center">
                     <div>
                         <h1 className="accent uk-heading-medium editable">Tribeca</h1>
-                        <p className="editable">TriBeCa is an upscale residential neighborhood known for its cobblestone
-                            streets, post-industrial vibe, and easy access to the Financial District and
-                            Lower Manhattan.
-                            Situated on the same block as the new Four Seasons Hotel and Woolworth
-                            building, Iris Tribeca is just around the corner from City Hall Park and is
-                            moments from high-end dining and shopping options. Whole Foods, One
-                            World Trade Center, Brookfield Place, Rockefeller Park, and the Hudson River
-                            Greenway are all close by. Transportation could not be any more convenient,
-                            as it is literally steps away from the subway lines 2/3/A/C/E/R/W and within 1-
-                            2 blocks from lines 1/4/5/6. Pets are welcome. </p>
-                    </div>
-                </div>
-            </div>
-
-            <div className="uk-section">
-                <div className="uk-container">
-                    <div className="uk-position-relative uk-visible-toggle uk-light" data-uk-slideshow>
-
-                        <ul className="uk-slideshow-items">
-                            <li>
-                                <img src={Slide} alt="" data-uk-cover />
-                            </li>
-                            <li>
-                                <img src={Slide} alt="" data-uk-cover />
-                            </li>
-                            <li>
-                                <img src={Slide} alt="" data-uk-cover />
-                            </li>
-                        </ul>
-
-                        <a className="uk-position-center-left uk-position-small uk-slidenav-large" href="#" data-uk-slidenav-previous data-uk-slideshow-item="previous"></a>
-                        <a className="uk-position-center-right uk-position-small uk-slidenav-large" href="#" data-uk-slidenav-next data-uk-slideshow-item="next"></a>
-
+                        <p className="editable">TriBeCa is an upscale residential neighborhood known for its cobblestone streets, post-industrial
+                            vibe, and easy access to the Financial District and Lower Manhattan. Iris is situated around the
+                            corner from City Hall Park and is moments from high-end dining and shopping options. One
+                            World Trade Center, Brookfield Place, Rockefeller Park, and the Hudson River Greenway are all
+                            close by. Nearby subway lines include the 1/2/3/4/5/A/C/E/R/W. </p>
                     </div>
                 </div>
             </div>
@@ -59,6 +35,70 @@ export default function Residences() {
                     </div>
                 </div>
             </div>
+
+            <div className="uk-section">
+                <div className="uk-container uk-container-large">
+                    <div className="uk-child-width-1-2@s uk-text-center uk-flex-middle" data-uk-grid>
+                        <div>
+                            <h2 className="accent uk-heading-small editable">Art & Culture</h2>
+                            <p className="editable">Tribeca has quickly turned into a luxury
+                                destination and encompasses districts of
+                                historical significance that has transformed into
+                                sophisticated and creative communities. This
+                                neighborhood is near many attractions including
+                                The One World Observatory, The Woolworth
+                                Building, The Oculus and Brookfield Place, to
+                                name a few.</p>
+                        </div>
+                        <div>
+                            <img src={Art} alt="" />
+                        </div>
+                    </div>
+                    <div className="uk-child-width-1-2@s uk-text-center uk-flex-middle uk-flex-row-reverse" data-uk-grid>
+                        <div>
+                            <h2 className="accent uk-heading-small editable">Dining</h2>
+                            <p className="editable">There is no shortage of incredible dining options
+in Tribeca. There are local staples, relaxed bistros,
+lively bars, and everything in-between – all just a
+short distance away from Iris. Serafina, Gran
+Morsi, CUT by Wolfgang Puck, and The Odeon are
+just a handful of neighborhood favorites. </p>
+                        </div>
+                        <div>
+                            <img src={Dining} alt="" />
+                        </div>
+                    </div>
+                    <div className="uk-child-width-1-2@s uk-text-center uk-flex-middle" data-uk-grid>
+                        <div>
+                            <h2 className="accent uk-heading-small editable">Health & Wellness</h2>
+                            <p className="editable">Tribeca is perfected situated Hudson River Park
+offering easy access to greenspace. Equinox and
+Orangetheory and a host of unique studios from
+pilates to yoga to strength training are a fitness
+lover’s dream.</p>
+                        </div>
+                        <div>
+                            <img src={Health} alt="" />
+                        </div>
+                    </div>
+                    <div className="uk-child-width-1-2@s uk-text-center uk-flex-middle uk-flex-row-reverse" data-uk-grid>
+                        <div>
+                            <h2 className="accent uk-heading-small editable">Education</h2>
+                            <p className="editable">While Pace University, Avenues, and FIT attract students
+from around the world, Tribeca is close to some of the
+most sought-after schools for all ages. Blue School,
+Downtown Little School, and Hawthorne Country Day
+School offer a multitude of opportunities for children and
+are within a short distance for an ideal morning commute.</p>
+                        </div>
+                        <div>
+                            <img src={Education} alt="" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
         </Layout>
     )
 }

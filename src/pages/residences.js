@@ -21,7 +21,7 @@ export default function Residences() {
                             keycard elevator access blend seamlessly with organic surfaces and tones.
                             High-efficiency central heating and cooling and Miele washers/dryers come
                             standard.</p>
-                            <a href="" className="uk-h3 accent text-underline">Download Fact Sheet</a>
+                            <a href="/images/IRIS-fact_sheet.pdf" target="_blank" rel="noopener" className="uk-h3 accent text-underline">Download Fact Sheet</a>
                     </div>
                 </div>
             </div>
@@ -128,7 +128,7 @@ export default function Residences() {
                         <p className="editable">Quiet, spacious, and situated away from living areas, primary bedrooms at
                             Iris offer residents a sanctuary-like space to unwind, rest, and recharge.
                             Ample walk-in closets offer plenty of storage and keep all your wardrobe
-                            options at your fingertips. Master bedrooms have their own additional private balcony</p>
+                            options at your fingertips. Master bedrooms have their own additional private balcony.</p>
                     </div>
                 </div>
             </div>

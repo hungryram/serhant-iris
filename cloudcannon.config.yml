@@ -9,23 +9,6 @@ collections_config:
     _enabled_editors:
       - visual
       - content
-# START COLLECTION GROUPS
-collection_groups:
-  - heading: Profile and Settings
-    collections:
-      - data
-  - heading: Pages
-    collections:
-      - availability
-      - amenities
-      - architecture
-      - press
-      - contact
-      - legal
-      - neighborhood
-      - residences
-      - team
-      - thank-you
 paths:
   uploads: /images
 _inputs:
