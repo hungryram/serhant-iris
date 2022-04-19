@@ -35,7 +35,7 @@ export default function Amenities({ data }) {
                                 return (
                                     <li>
                                         <Link to={node.photo}>
-                                            <img src={node.photo} alt="" data-uk-cover />
+                                            <img src= {node.photo} alt="" data-uk-cover />
                                         </Link>
                                     </li>
                                 )
