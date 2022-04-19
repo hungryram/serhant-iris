@@ -5,12 +5,18 @@ import Art from "../images/art-and-culture.png"
 import Dining from "../images/Dining.png"
 import Health from "../images/health-and-fitness.png"
 import Education from "../images/Education-Pace-University.png"
+import { StaticImage } from "gatsby-plugin-image"
+
 
 export default function Neighborhood() {
     return (
         <Layout>
             <div className="uk-animation-slide-bottom-small">
-                <img src={Main} alt="" className="uk-width-1-1"/>
+                <StaticImage
+                    src="../images/Dorothy-Hong_Tribeca_12-2013_1807.jpg"
+                    className="uk-width-1-1"
+                    alt="19 Park Place neighborhood"
+                />
             </div>
 
 

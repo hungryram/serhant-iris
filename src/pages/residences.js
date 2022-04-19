@@ -2,13 +2,18 @@ import * as React from "react"
 import Layout from "../components/Layout"
 import Slide from "../../static/images/lviing-room-iris-tribeca.jpg"
 import { graphql, Link } from "gatsby"
+import { StaticImage } from "gatsby-plugin-image"
 
 export default function Residences({ data }) {
     const content = data.markdownRemark.frontmatter
     return (
         <Layout>
             <div className="uk-animation-slide-bottom-small">
-                <img src={Slide} alt="" className="uk-width-1-1"/>
+                <StaticImage
+                    src="../../static/images/lviing-room-iris-tribeca.jpg"
+                    alt="19 Park Place living room"
+                    class="uk-width-1-1"
+                />
             </div>
 
 

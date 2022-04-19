@@ -5,6 +5,8 @@ search_engine_optimization:
     meta_description:
 gallery:
     -
+        photo: /images/19_Park_Place_Lounge_0604_opt.jpg
+    -
         photo: /images/DDP_8838-pano-web.jpg
     -
         photo: /images/DDP_8873-pano-web.jpg
