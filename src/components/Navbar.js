@@ -3,7 +3,6 @@ import data from "../../data/appearance.json"
 import menu from "../../data/menu.json"
 import { Link } from "gatsby"
 import * as Styles from "../styles/navbar.module.css"
-import { AiOutlineInstagram } from "@react-icons/all-files/ai/AiOutlineInstagram"
 import { IconContext } from "@react-icons/all-files"
 import { CgMenuGridO } from "@react-icons/all-files/cg/CgMenuGridO"
 import { GrClose } from "@react-icons/all-files/gr/GrClose"
@@ -32,13 +31,6 @@ export default function Navbar() {
                                             </li>
                                         )
                                     })}
-                                    <li className="uk-navbar-item">
-                                        <a href="" target="_blank" rel="noopener">
-                                            <IconContext.Provider value={{ size: '25px' }}>
-                                                <AiOutlineInstagram />
-                                            </IconContext.Provider>
-                                        </a>
-                                    </li>
                                 </ul>
                             </div>
                         </div>
