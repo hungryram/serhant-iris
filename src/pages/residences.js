@@ -1,6 +1,6 @@
 import * as React from "react"
 import Layout from "../components/Layout"
-import Slide from "../images/image.jpg"
+import Slide from "../../static/images/lviing-room-iris-tribeca.jpg"
 import { graphql, Link } from "gatsby"
 
 export default function Residences({ data }) {
@@ -8,7 +8,7 @@ export default function Residences({ data }) {
     return (
         <Layout>
             <div className="uk-animation-slide-bottom-small">
-                <img src={Slide} alt="" />
+                <img src={Slide} alt="" className="uk-width-1-1"/>
             </div>
 
 
@@ -32,16 +32,16 @@ export default function Residences({ data }) {
                 <div className="uk-container">
                     <div className="uk-position-relative uk-visible-toggle uk-light" data-uk-slideshow>
 
-                        <ul className="uk-slideshow-items">
-                            <li>
-                                <img src={Slide} alt="" data-uk-cover />
-                            </li>
-                            <li>
-                                <img src={Slide} alt="" data-uk-cover />
-                            </li>
-                            <li>
-                                <img src={Slide} alt="" data-uk-cover />
-                            </li>
+                    <ul className="uk-slideshow-items" data-uk-lightbox>
+                        {content.living_spaces.map((node) => {
+                                return (
+                                    <li>
+                                        <Link to={node.photo}>
+                                            <img src= {node.photo} alt="" data-uk-cover />
+                                        </Link>
+                                    </li>
+                                )
+                            })}
                         </ul>
 
                         <a className="uk-position-center-left uk-position-small uk-slidenav-large" href="#" data-uk-slidenav-previous data-uk-slideshow-item="previous"></a>
@@ -67,8 +67,8 @@ export default function Residences({ data }) {
                 <div className="uk-container">
                     <div className="uk-position-relative uk-visible-toggle uk-light" data-uk-slideshow>
 
-                        <ul className="uk-slideshow-items">
-                        {content.bathrooms.map((node) => {
+                    <ul className="uk-slideshow-items" data-uk-lightbox>
+                        {content.kitchen.map((node) => {
                                 return (
                                     <li>
                                         <Link to={node.photo}>
@@ -104,7 +104,7 @@ export default function Residences({ data }) {
                 <div className="uk-container">
                     <div className="uk-position-relative uk-visible-toggle uk-light" data-uk-slideshow>
 
-                        <ul className="uk-slideshow-items">
+                    <ul className="uk-slideshow-items" data-uk-lightbox>
                         {content.bedrooms.map((node) => {
                                 return (
                                     <li>
@@ -139,7 +139,7 @@ export default function Residences({ data }) {
                 <div className="uk-container">
                     <div className="uk-position-relative uk-visible-toggle uk-light" data-uk-slideshow>
 
-                        <ul className="uk-slideshow-items">
+                        <ul className="uk-slideshow-items" data-uk-lightbox>
                         {content.bathrooms.map((node) => {
                                 return (
                                     <li>
@@ -181,6 +181,12 @@ export const query = graphql`
 			photo
         }
         bedrooms {
+            photo
+        }
+        kitchen {
+            photo
+        }
+        living_spaces {
             photo
         }
       }

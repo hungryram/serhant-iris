@@ -8,7 +8,7 @@ export default function Amenities({ data }) {
     return (
         <Layout>
             <div className="uk-animation-slide-bottom-small">
-                <img src={Slide} alt="" />
+                <img src={Slide} alt="" className="uk-width-1-1" />
             </div>
 
             <div className="uk-section">

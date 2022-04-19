@@ -97,6 +97,12 @@ a.uk-slidenav-large svg {
     width: 60px;
 }
 
+@media screen and (max-width: 800px) {
+    a.uk-slidenav-large svg {
+        width: 40px;
+    } 
+}
+
 body .uk-table-large td, body .uk-table-large th {
     padding: 40px 12px;
     text-align: center!important;
@@ -105,4 +111,20 @@ body .uk-table-large td, body .uk-table-large th {
 .uk-radio:checked,
 .uk-radio:checked:focus {
     background-color: #8e91be;
+}
+
+.uk-offcanvas-bar {
+    width: 100%;
+}
+
+.uk-offcanvas-flip .uk-offcanvas-bar {
+    right: -100%;
+}
+
+.uk-offcanvas-bar {
+    background: rgb(230 230 230);
+}
+
+.uk-offcanvas-close {
+    cursor: pointer;
 }

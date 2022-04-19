@@ -10,7 +10,7 @@ export default function Neighborhood() {
     return (
         <Layout>
             <div className="uk-animation-slide-bottom-small">
-                <img src={Main} alt="" />
+                <img src={Main} alt="" className="uk-width-1-1"/>
             </div>
 
 
