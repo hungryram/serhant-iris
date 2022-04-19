@@ -1,8 +1,10 @@
 import * as React from "react"
+import { graphql, Link } from "gatsby"
 import Layout from "../components/Layout"
 import Slide from "../images/image.jpg"
 
-export default function Residences() {
+export default function Amenities({ data }) {
+    const content = data.markdownRemark.frontmatter
     return (
         <Layout>
             <div className="uk-animation-slide-bottom-small">
@@ -25,19 +27,19 @@ export default function Residences() {
             </div>
 
             <div className="uk-section">
-                <div className="uk-container">
+                <div className="uk-container uk-container-small">
                     <div className="uk-position-relative uk-visible-toggle uk-light" data-uk-slideshow>
 
-                        <ul className="uk-slideshow-items">
-                            <li>
-                                <img src={Slide} alt="" data-uk-cover />
-                            </li>
-                            <li>
-                                <img src={Slide} alt="" data-uk-cover />
-                            </li>
-                            <li>
-                                <img src={Slide} alt="" data-uk-cover />
-                            </li>
+                        <ul className="uk-slideshow-items" data-uk-lightbox>
+                        {content.gallery.map((node) => {
+                                return (
+                                    <li>
+                                        <Link to={node.photo}>
+                                            <img src={node.photo} alt="" data-uk-cover />
+                                        </Link>
+                                    </li>
+                                )
+                            })}
                         </ul>
 
                         <a className="uk-position-center-left uk-position-small uk-slidenav-large" href="#" data-uk-slidenav-previous data-uk-slideshow-item="previous"></a>
@@ -49,3 +51,15 @@ export default function Residences() {
         </Layout>
     )
 }
+
+export const query = graphql`
+{
+    markdownRemark(fileAbsolutePath: {regex: "/amenities/"}) {
+      frontmatter {
+        gallery {
+			photo
+        }
+      }
+    }
+  }
+`

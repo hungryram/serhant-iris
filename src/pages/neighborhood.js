@@ -6,7 +6,7 @@ import Dining from "../images/Dining.png"
 import Health from "../images/health-and-fitness.png"
 import Education from "../images/Education-Pace-University.png"
 
-export default function Residences() {
+export default function Neighborhood() {
     return (
         <Layout>
             <div className="uk-animation-slide-bottom-small">

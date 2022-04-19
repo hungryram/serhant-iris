@@ -16,3 +16,5 @@ _inputs:
     type: markdown
   logo:
     type: image
+  photo:
+    type: image

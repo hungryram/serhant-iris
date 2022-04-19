@@ -6,7 +6,7 @@ import Slide from "../images/image.jpg"
 import { AiOutlineFilePdf } from "@react-icons/all-files/ai/AiOutlineFilePdf"
 import Hero from "../images/park-place-background.jpg"
 
-export default function Residences({ data }) {
+export default function Availability({ data }) {
     const content = data.markdownRemark.frontmatter
 
     const background = {
