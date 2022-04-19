@@ -10,7 +10,7 @@ collections_config:
       - visual
       - content
 paths:
-  uploads: /images
+  uploads: static/images
 _inputs:
   body:
     type: markdown
