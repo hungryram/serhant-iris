@@ -5,7 +5,7 @@ search_engine_optimization:
     meta_description:
 gallery:
     -
-        photo: /static/images/DDP_8838-pano-web.jpg
+        photo: /src/images/art-and-culture.png
     -
         photo: /static/images/DDP_8873-pano-web.jpg
     -
