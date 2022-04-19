@@ -8,10 +8,24 @@ bathrooms:
         photo: /images/ddp-8335-pano-web.jpg
     -
         photo: /images/ddp-8366-pano-web.jpg
+    -
+        photo: /images/DDP_8432-web.jpg
+    -
+        photo: /images/DDP_8492-pano-web.jpg
+    -
+        photo: /images/DDP_8738-web.jpg
 bedrooms:
     -
-        photo: /static/images/ddp-8347-pano-web.jpg
+        photo: /images/ddp-8347-pano-web.jpg
     -
-        photo: /static/images/ddp-8407-web.jpg
+        photo: /images/ddp-8407-web.jpg
+    -
+        photo: /images/ddp-8444-web.jpg
+    -
+        photo: /images/ddp-8467-pano-web.jpg
+    -
+        photo: /images/ddp-8713-pano-web.jpg
+    -
+        photo: /images/ddp-8729-web.jpg
 ---
 
