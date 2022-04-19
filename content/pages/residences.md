@@ -5,7 +5,9 @@ search_engine_optimization:
     meta_description:
 bathrooms:
     -
-        photo: /images/DDP_8335-pano-web.jpg
+        photo: /images/ddp-8335-pano-web.jpg
+    -
+        photo: /images/ddp-8366-pano-web.jpg
 bedrooms:
     -
         photo: /images/DDP_8335-pano-web.jpg
@@ -18,3 +20,4 @@ bedrooms:
     -
         photo: /images/DDP_8738-web.jpg
 ---
+
