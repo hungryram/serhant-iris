@@ -11,6 +11,7 @@ collections_config:
       - content
 paths:
   uploads: static/images
+  static: static
 _inputs:
   body:
     type: markdown
