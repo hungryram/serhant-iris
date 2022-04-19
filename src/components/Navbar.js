@@ -52,7 +52,7 @@ export default function Navbar() {
                     <div className="uk-navbar-left">
                         <Link to="/" className="uk-navbar-item uk-logo">
                             {data.branding.logo ?
-                                <img src={data.branding.logo} alt="Iris Tribeca" width="120" /> : <h1 className="uk-heading-large accent">Iris</h1>
+                                <img src={data.branding.logo} alt="Iris Tribeca" width="80" /> : <h1 className="uk-heading-large accent">Iris</h1>
                             }
                         </Link>
                     </div>
