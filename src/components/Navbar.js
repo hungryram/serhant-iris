@@ -70,18 +70,22 @@ export default function Navbar() {
             <div id="offcanvas-flip" data-uk-offcanvas="flip: true; overlay: true">
                 <div className="uk-offcanvas-bar uk-flex uk-flex-column">
 
-                    <IconContext.Provider 
+                    <IconContext.Provider
                         value={{ size: '40px' }}
                     >
-                        <GrClose className="uk-offcanvas-close"/>
+                        <GrClose className="uk-offcanvas-close" />
                     </IconContext.Provider>
 
-                    <Link to="/" className="uk-navbar-item uk-logo">
-                        {data.branding.logo ?
-                            <img src={data.branding.logo} alt="Iris Tribeca" width={110} data-uk-scrollspy="uk-animation-slide-bottom-small;repeat:true" /> : <h1 className="uk-heading-large accent">Iris</h1>
-                        }
-                    </Link>
 
+                    <ul className="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical uk-padding">
+                        <li>
+                            <Link to="/" className="uk-navbar-item uk-logo">
+                                {data.branding.logo ?
+                                    <img src={data.branding.logo} alt="Iris Tribeca" width={110} data-uk-scrollspy="cls:uk-animation-slide-bottom-small;repeat:true" /> : <h1 className="uk-heading-large accent">Iris</h1>
+                                }
+                            </Link>
+                        </li>
+                    </ul>
                     <ul className="uk-nav uk-margin-auto-vertical uk-dark" data-uk-scrollspy="target: > li; cls: uk-animation-slide-left-small; delay: 100;repeat:true">
                         {menu.menu.map((node) => {
                             return (
@@ -91,7 +95,7 @@ export default function Navbar() {
                             )
                         })}
                     </ul>
-                    <ul className="uk-dark uk-padding-remove uk-list" data-uk-scrollspy="uk-animation-slide-bottom-small;repeat:true">
+                    <ul className="uk-dark uk-padding-remove uk-list" data-uk-scrollspy="cls:uk-animation-slide-bottom-small;repeat:true">
                         <li className={Styles.listContact}>
                             <a href={`mailto: ${contact.contact_information.email}`} className={Styles.menuContact}>{contact.contact_information.email}</a>
                         </li>
@@ -100,7 +104,7 @@ export default function Navbar() {
                         </li>
                         <li className={Styles.listContact}></li>
                         <li>
-                        <a href="" className={Styles.menuContact}>{contact.contact_information.address} {contact.contact_information.city}, {contact.contact_information.state} {contact.contact_information.zip_code}</a>
+                            <a href="" className={Styles.menuContact}>{contact.contact_information.address} {contact.contact_information.city}, {contact.contact_information.state} {contact.contact_information.zip_code}</a>
                         </li>
                     </ul>
 

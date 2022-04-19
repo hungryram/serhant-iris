@@ -23,7 +23,7 @@ export default function Availability({ data }) {
                 <div className="uk-section uk-text-center">
                     <div className="uk-container">
                         <h1 className="accent uk-heading-large">Availability</h1>
-                        <a href="" className="uk-h3 accent text-underline">Download PDF</a>
+                        <a href="/images/IRIS-availability.pdf" target="_blank" rel="noopener noreferrer" className="uk-h3 accent text-underline">Download PDF</a>
                     </div>
                 </div>
                 <div className="uk-container">
@@ -83,7 +83,15 @@ export default function Availability({ data }) {
                                     <div className="uk-card-header">
                                         <div className="data-uk-grid-small uk-flex-middle" data-uk-grid>
                                             <div className="uk-width-expand">
-                                                <h3 className="uk-card-title uk-margin-remove-bottom"></h3>
+                                                <h3 className="uk-card-title uk-margin-remove-bottom">
+                                                {content.availability.map((node) => {
+                                                    return (
+                                                        <>
+                                                            {node.name ? <h2 className="uk-margin-small-top accent">{node.name}</h2> : <p>—</p>}
+                                                        </>
+                                                    )
+                                                })}
+                                                </h3>
                                             </div>
                                         </div>
                                     </div>
@@ -164,7 +172,7 @@ export default function Availability({ data }) {
                                                 {content.availability.map((node) => {
                                                     return (
                                                         <>
-                                                            {node.bedbath ? <a href={node.floor_plan} target="_blank" rel="noopener" className="uk-margin-small-top">VIEW</a> : <p>—</p>}
+                                                            {node.bedbath ? <a href={node.floor_plan} target="_blank" rel="noopener" className="uk-margin-small-top accent">VIEW</a> : <p>—</p>}
                                                         </>
                                                     )
                                                 })}
@@ -175,7 +183,7 @@ export default function Availability({ data }) {
                                         {content.availability.map((node) => {
                                             return (
                                                 <>
-                                                    {node.listing ? <a href={node.listing} target="_blank" rel="noopener" className="uk-margin-small-top">VIEW</a> : <p>—</p>}
+                                                    {node.listing ? <a href={node.listing} target="_blank" rel="noopener" className="uk-margin-small-top accent">VIEW</a> : <p>—</p>}
                                                 </>
                                             )
                                         })}
