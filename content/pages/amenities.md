@@ -7,8 +7,8 @@ gallery:
     -
         photo: /images/DDP_8838-pano-web.jpg
     -
-        photo: /static/images/DDP_8873-pano-web.jpg
+        photo: /images/DDP_8873-pano-web.jpg
     -
-        photo: /static/images/DDP_8876-web.jpg
+        photo: /images/DDP_8876-web.jpg
 ---
 

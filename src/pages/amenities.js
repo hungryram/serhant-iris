@@ -27,7 +27,7 @@ export default function Amenities({ data }) {
             </div>
 
             <div className="uk-section">
-                <div className="uk-container uk-container-small">
+                <div className="uk-container">
                     <div className="uk-position-relative uk-visible-toggle uk-light" data-uk-slideshow>
 
                         <ul className="uk-slideshow-items" data-uk-lightbox>

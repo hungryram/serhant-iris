@@ -1,8 +1,10 @@
 import * as React from "react"
 import Layout from "../components/Layout"
 import Slide from "../images/image.jpg"
+import { graphql, Link } from "gatsby"
 
-export default function Residences() {
+export default function Residences({ data }) {
+    const content = data.markdownRemark.frontmatter
     return (
         <Layout>
             <div className="uk-animation-slide-bottom-small">
@@ -66,15 +68,15 @@ export default function Residences() {
                     <div className="uk-position-relative uk-visible-toggle uk-light" data-uk-slideshow>
 
                         <ul className="uk-slideshow-items">
-                            <li>
-                                <img src={Slide} alt="" data-uk-cover />
-                            </li>
-                            <li>
-                                <img src={Slide} alt="" data-uk-cover />
-                            </li>
-                            <li>
-                                <img src={Slide} alt="" data-uk-cover />
-                            </li>
+                        {content.bathrooms.map((node) => {
+                                return (
+                                    <li>
+                                        <Link to={node.photo}>
+                                            <img src= {node.photo} alt="" data-uk-cover />
+                                        </Link>
+                                    </li>
+                                )
+                            })}
                         </ul>
 
                         <a className="uk-position-center-left uk-position-small uk-slidenav-large" href="#" data-uk-slidenav-previous data-uk-slideshow-item="previous"></a>
@@ -103,15 +105,15 @@ export default function Residences() {
                     <div className="uk-position-relative uk-visible-toggle uk-light" data-uk-slideshow>
 
                         <ul className="uk-slideshow-items">
-                            <li>
-                                <img src={Slide} alt="" data-uk-cover />
-                            </li>
-                            <li>
-                                <img src={Slide} alt="" data-uk-cover />
-                            </li>
-                            <li>
-                                <img src={Slide} alt="" data-uk-cover />
-                            </li>
+                        {content.bedrooms.map((node) => {
+                                return (
+                                    <li>
+                                        <Link to={node.photo}>
+                                            <img src= {node.photo} alt="" data-uk-cover />
+                                        </Link>
+                                    </li>
+                                )
+                            })}
                         </ul>
 
                         <a className="uk-position-center-left uk-position-small uk-slidenav-large" href="#" data-uk-slidenav-previous data-uk-slideshow-item="previous"></a>
@@ -138,15 +140,15 @@ export default function Residences() {
                     <div className="uk-position-relative uk-visible-toggle uk-light" data-uk-slideshow>
 
                         <ul className="uk-slideshow-items">
-                            <li>
-                                <img src={Slide} alt="" data-uk-cover />
-                            </li>
-                            <li>
-                                <img src={Slide} alt="" data-uk-cover />
-                            </li>
-                            <li>
-                                <img src={Slide} alt="" data-uk-cover />
-                            </li>
+                        {content.bathrooms.map((node) => {
+                                return (
+                                    <li>
+                                        <Link to={node.photo}>
+                                            <img src= {node.photo} alt="" data-uk-cover />
+                                        </Link>
+                                    </li>
+                                )
+                            })}
                         </ul>
 
                         <a className="uk-position-center-left uk-position-small uk-slidenav-large" href="#" data-uk-slidenav-previous data-uk-slideshow-item="previous"></a>
@@ -170,3 +172,18 @@ export default function Residences() {
         </Layout>
     )
 }
+
+export const query = graphql`
+{
+    markdownRemark(fileAbsolutePath: {regex: "/residences/"}) {
+      frontmatter {
+        bathrooms {
+			photo
+        }
+        bedrooms {
+            photo
+        }
+      }
+    }
+  }
+`
