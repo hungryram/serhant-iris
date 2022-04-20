@@ -130,6 +130,6 @@ body .uk-table-large td, body .uk-table-large th {
 }
 
 .bg {
-    position: absolute;
+    position: absolute!important;
     height: 100%;
 }

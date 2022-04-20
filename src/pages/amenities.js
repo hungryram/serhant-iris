@@ -12,7 +12,7 @@ export default function Amenities({ data }) {
                 <StaticImage
                     src="../images/19_Park_place_garden_0523_opt.jpg"
                     alt="19 Park Place Garden"
-                    class="uk-width-1-1"
+                    className="uk-width-1-1"
                 />
             </div>
 
