@@ -2,6 +2,7 @@ import * as React from "react"
 import { Link } from "gatsby"
 import Hero from "../images/park-place-hero.jpg"
 import Layout from "../components/Layout";
+import { StaticImage } from "gatsby-plugin-image";
 
 export default function Building() {
 
@@ -11,7 +12,12 @@ export default function Building() {
 
     return (
         <Layout>
-            <div style={background}>
+
+            <div className="uk-position-relative">
+            <StaticImage 
+                    src="../images/park-place-hero.jpg"
+                    className="bg uk-width-1-1"
+                />
                 <div className="uk-section uk-section-large uk-position-relative hero-section">
                     <div className="uk-container uk-container-large uk-animation-slide-bottom-small">
                         <div className="uk-flex uk-flex-left">
@@ -30,7 +36,7 @@ export default function Building() {
                             <div className="uk-width-2xlarge uk-text-center">
                                 <p className="editable">SCULPTED CURVES AND DAZZLING LOWER MANHATTAN VIEWS COALESCE AT IRIS TRIBECA, A SOARING RESIDENTIAL TOWER WHERE LIGHT AND FRESH AIR SUFFUSE TWENTY-FOUR STUNNING HALF AND FULL-FLOOR HOMES</p>
                                 <p className="editable">Brought to life by renowned architect Ismael Leyva Architects, IRIS TriBeCa offers every resident private outdoor space in one of the city's trendiest neighborhoods.</p>
-                                <Link to="/" className="uk-button uk-button-secondary">Explore the residences</Link>
+                                <Link to="/availability" className="uk-button uk-button-secondary">Explore the residences</Link>
                             </div>
                         </div>
                     </div>

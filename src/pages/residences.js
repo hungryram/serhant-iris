@@ -12,7 +12,7 @@ export default function Residences({ data }) {
                 <StaticImage
                     src="../../static/images/lviing-room-iris-tribeca.jpg"
                     alt="19 Park Place living room"
-                    class="uk-width-1-1"
+                    className="uk-width-1-1"
                 />
             </div>
 

@@ -128,3 +128,8 @@ body .uk-table-large td, body .uk-table-large th {
 .uk-offcanvas-close {
     cursor: pointer;
 }
+
+.bg {
+    position: absolute;
+    height: 100%;
+}

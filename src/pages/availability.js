@@ -1,23 +1,22 @@
 import { graphql } from "gatsby"
 import * as React from "react"
-import Intro from "../components/Intro"
 import Layout from "../components/Layout"
-import Slide from "../images/image.jpg"
 import { AiOutlineFilePdf } from "@react-icons/all-files/ai/AiOutlineFilePdf"
-import Hero from "../images/park-place-background.jpg"
+import { StaticImage } from "gatsby-plugin-image"
+import { IconContext } from "@react-icons/all-files"
 
 export default function Availability({ data }) {
     const content = data.markdownRemark.frontmatter
 
-    const background = {
-        backgroundImage: 'url(' + Hero + ')',
-        backgroundPosition: 'top',
-    };
-
     return (
 
         <Layout>
-            <div style={background}>
+            <div className="uk-position-relative">
+                <StaticImage 
+                    src="../images/park-place-background.jpg"
+                    className="bg"
+                    alt="Iris Tribeca"
+                />
                 <div style={{ paddingTop: '100px', paddingBottom: '100px' }}>
                 <div className="uk-section uk-animation-slide-bottom-small" style={{ backgroundColor: "rgb(255 255 255 / 90%)" }}>
                 <div className="uk-section uk-text-center">
@@ -67,7 +66,11 @@ export default function Availability({ data }) {
 
                                                 {node.listing ? <td><a href={node.listing} className="uk-link-reset" target="_blank" rel="noopener">VIEW</a></td> : <td>—</td>}
 
-                                                {node.floor_plan ? <td><a href={node.floor_plan} className="uk-link-reset" target="_blank" rel="noopener"><AiOutlineFilePdf /></a></td> : <td>—</td>}
+                                                {node.floor_plan ? <td><a href={node.floor_plan} className="uk-link-reset" target="_blank" rel="noopener">
+                                                    <IconContext.Provider value={{ size: '20px' }}>
+                                                    <AiOutlineFilePdf />
+                                                    </IconContext.Provider>
+                                                    </a></td> : <td>—</td>}
                                             </>
                                         )
                                     })}

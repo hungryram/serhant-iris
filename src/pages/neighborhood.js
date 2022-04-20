@@ -56,7 +56,10 @@ export default function Neighborhood() {
                                 name a few.</p>
                         </div>
                         <div>
-                            <img src={Art} alt="" />
+                            <StaticImage
+                                src="../images/art-and-culture.png"
+                                alt="Iris Tribeca Art and Culture"
+                            />
                         </div>
                     </div>
                     <div className="uk-child-width-1-2@s uk-text-center uk-flex-middle uk-flex-row-reverse" data-uk-grid>
@@ -70,7 +73,10 @@ Morsi, CUT by Wolfgang Puck, and The Odeon are
 just a handful of neighborhood favorites. </p>
                         </div>
                         <div>
-                            <img src={Dining} alt="" />
+                        <StaticImage
+                                src="../images/Dining.png"
+                                alt="Iris Tribeca nearby restaurants"
+                            />
                         </div>
                     </div>
                     <div className="uk-child-width-1-2@s uk-text-center uk-flex-middle" data-uk-grid>
@@ -83,7 +89,10 @@ pilates to yoga to strength training are a fitness
 lover’s dream.</p>
                         </div>
                         <div>
-                            <img src={Health} alt="" />
+                        <StaticImage
+                                src="../images/health-and-fitness.png"
+                                alt="Hudson River Park"
+                            />
                         </div>
                     </div>
                     <div className="uk-child-width-1-2@s uk-text-center uk-flex-middle uk-flex-row-reverse" data-uk-grid>
@@ -97,7 +106,10 @@ School offer a multitude of opportunities for children and
 are within a short distance for an ideal morning commute.</p>
                         </div>
                         <div>
-                            <img src={Education} alt="" />
+                        <StaticImage
+                                src="../images/Education-Pace-University.png"
+                                alt="Education Pace University"
+                            />
                         </div>
                     </div>
                 </div>
