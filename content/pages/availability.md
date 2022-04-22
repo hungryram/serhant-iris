@@ -9,16 +9,16 @@ search_engine_optimization:
 studio:
   hide_category: false
   availability:
-    - bedbath: 2 / 2
-      common_charges_est_: $1,298
-      exposure: N, W
-      floor_plan: /uploads/westly--8c.png
+    - name: 8C
+      bedbath: 2 / 2
       int_ext_sq: 1,252
-      listing: https://www.serhant.com/listings/3767933
-      name: 8C
+      exposure: N, W
       price: $2,625,000
+      common_charges_est_: $1,298
       real_estate_taxes_est_: $1,340
       status: AVAILABLE
+      floor_plan: /uploads/westly--8c.png
+      listing: https://www.serhant.com/listings/3767933
 one_bedroom:
   hide_category: false
   availability:
