@@ -30,7 +30,7 @@ one_bedroom:
       common_charges_est_: $654
       real_estate_taxes_est_: $1,389
       status: AVAILABLE
-      floor_plan: /uploads/westly--8c.png
+      floor_plan: /images/web-floors-3-6-residence-b-1.png
       listing: https://serhant.com/listings/3788083
 two_bedroom:
   hide_category: false
@@ -43,7 +43,7 @@ two_bedroom:
       common_charges_est_: $1,202
       real_estate_taxes_est_: $2,405
       status: AVAILABLE
-      floor_plan: /uploads/westly--8c.png
+      floor_plan: /images/web-floors-13-19-residence-a-1.png
       listing: https://www.serhant.com/listings/3788100
     - name: 12A
       bedbath: 2/2
@@ -53,7 +53,7 @@ two_bedroom:
       common_charges_est_: $1,202
       real_estate_taxes_est_: $2,405
       status: AVAILABLE
-      floor_plan:
+      floor_plan: /images/web-floors-13-19-residence-a-1.png
       listing: https://serhant.com/listings/3788102
 three_bedroom:
   hide_category: false
@@ -66,7 +66,7 @@ three_bedroom:
       common_charges_est_: $1,428
       real_estate_taxes_est_: $2,857
       status: AVAILABLE
-      floor_plan: /uploads/westly--8c.png
+      floor_plan: /images/web-floors-9-11-residence-a-1.png
       listing: https://www.serhant.com/listings/3788107
 ---
 
