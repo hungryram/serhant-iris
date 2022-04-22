@@ -47,7 +47,7 @@ export default function Availability({ data }) {
                                         </tr>
                                     </thead>
 
-                                    {studios.hide_studio !== true &&
+                                    {studios.hide_category !== true &&
                                         <>
                                             <thead className={Styles.availHead}>
                                                 <tr>
@@ -57,10 +57,11 @@ export default function Availability({ data }) {
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                <tr>
-                                                    {studios.availability.map((node) => {
-                                                        return (
-                                                            <>
+                                                {studios.availability.map((node) => {
+                                                    return (
+                                                        <>
+                                                            <tr>
+
                                                                 {node.name ? <td>{node.name}</td> : <td>—</td>}
 
                                                                 {node.bedbath ? <td>{node.bedbath}</td> : <td>—</td>}
@@ -84,16 +85,17 @@ export default function Availability({ data }) {
                                                                         <AiOutlineFilePdf />
                                                                     </IconContext.Provider>
                                                                 </a></td> : <td>—</td>}
-                                                            </>
-                                                        )
-                                                    })}
-                                                </tr>
+                                                            </tr>
+
+                                                        </>
+                                                    )
+                                                })}
                                             </tbody>
                                         </>
                                     }
 
 
-                                    {oneBed.hide_studio !== true &&
+                                    {oneBed.hide_category !== true &&
                                         <>
                                             <thead className={Styles.availHead}>
                                                 <tr>
@@ -103,10 +105,11 @@ export default function Availability({ data }) {
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                <tr>
-                                                    {studios.availability.map((node) => {
-                                                        return (
-                                                            <>
+                                                {oneBed.availability.map((node) => {
+                                                    return (
+                                                        <>
+                                                            <tr>
+
                                                                 {node.name ? <td>{node.name}</td> : <td>—</td>}
 
                                                                 {node.bedbath ? <td>{node.bedbath}</td> : <td>—</td>}
@@ -130,14 +133,15 @@ export default function Availability({ data }) {
                                                                         <AiOutlineFilePdf />
                                                                     </IconContext.Provider>
                                                                 </a></td> : <td>—</td>}
-                                                            </>
-                                                        )
-                                                    })}
-                                                </tr>
+                                                            </tr>
+
+                                                        </>
+                                                    )
+                                                })}
                                             </tbody>
                                         </>
                                     }
-                                    {twoBed.hide_studio !== true &&
+                                    {twoBed.hide_category !== true &&
                                         <>
                                             <thead className={Styles.availHead}>
                                                 <tr>
@@ -147,10 +151,11 @@ export default function Availability({ data }) {
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                <tr>
-                                                    {studios.availability.map((node) => {
-                                                        return (
-                                                            <>
+                                                {twoBed.availability.map((node) => {
+                                                    return (
+                                                        <>
+                                                            <tr>
+
                                                                 {node.name ? <td>{node.name}</td> : <td>—</td>}
 
                                                                 {node.bedbath ? <td>{node.bedbath}</td> : <td>—</td>}
@@ -174,14 +179,15 @@ export default function Availability({ data }) {
                                                                         <AiOutlineFilePdf />
                                                                     </IconContext.Provider>
                                                                 </a></td> : <td>—</td>}
-                                                            </>
-                                                        )
-                                                    })}
-                                                </tr>
+                                                            </tr>
+
+                                                        </>
+                                                    )
+                                                })}
                                             </tbody>
                                         </>
                                     }
-                                    {threeBed.hide_studio !== true &&
+                                    {threeBed.hide_category !== true &&
                                         <>
                                             <thead className={Styles.availHead}>
                                                 <tr>
@@ -191,10 +197,11 @@ export default function Availability({ data }) {
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                <tr>
-                                                    {studios.availability.map((node) => {
-                                                        return (
-                                                            <>
+                                                {threeBed.availability.map((node) => {
+                                                    return (
+                                                        <>
+                                                            <tr>
+
                                                                 {node.name ? <td>{node.name}</td> : <td>—</td>}
 
                                                                 {node.bedbath ? <td>{node.bedbath}</td> : <td>—</td>}
@@ -218,130 +225,233 @@ export default function Availability({ data }) {
                                                                         <AiOutlineFilePdf />
                                                                     </IconContext.Provider>
                                                                 </a></td> : <td>—</td>}
-                                                            </>
-                                                        )
-                                                    })}
-                                                </tr>
+                                                            </tr>
+
+                                                        </>
+
+                                                    )
+                                                })}
                                             </tbody>
                                         </>
                                     }
                                 </table>
                             </div>
                             <div className="uk-hidden@m">
-                                <div className="uk-child-width-1-1" data-uk-grid>
-                                    <div>
-                                        <div className="uk-card uk-card-default uk-width-1-2@m">
-                                            <div className="uk-card-header">
-                                                <div className="data-uk-grid-small uk-flex-middle" data-uk-grid>
-                                                    <div className="uk-width-expand">
-                                                        <h3 className="uk-card-title uk-margin-remove-bottom">
-                                                            {studios.availability.map((node) => {
-                                                                return (
-                                                                    <>
-                                                                        {node.name ? <h2 className="uk-margin-small-top accent">{node.name}</h2> : <p>—</p>}
-                                                                    </>
-                                                                )
-                                                            })}
-                                                        </h3>
+                                {studios.hide_category !== true &&
+                                    <>
+                                        {studios.availability.map((node) => {
+                                            return (
+                                                <>
+                                                    <div className="uk-width-1-1" data-uk-grid>
+                                                        <div>
+                                                            <div className="uk-card uk-card-default uk-width-1-2@m">
+                                                                <div className="uk-card-header">
+                                                                    <div className="data-uk-grid-small uk-flex-middle" data-uk-grid>
+                                                                        <div className="uk-width-expand">
+                                                                        {node.name ? <h3 className="uk-card-title uk-margin-remove-bottom accent">{node.name}</h3> : <p>—</p>}
+
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div className="uk-card-body">
+                                                                    <div className="uk-child-width-1-2 uk-child-width-1-3@s" data-uk-grid>
+                                                                        <div>
+                                                                            <h6 className="uk-text-uppercase uk-margin-remove">BED / BATH</h6>
+                                                                            {node.bedbath ? <p className="uk-margin-small-top">{node.bedbath}</p> : <p>—</p>}
+                                                                        </div>
+                                                                        <div>
+                                                                            <h6 className="uk-text-uppercase uk-margin-remove">INT / EXT SF</h6>
+                                                                            {node.int_ext_sq ? <p className="uk-margin-small-top">{node.int_ext_sq}</p> : <p>—</p>}
+
+                                                                        </div>
+                                                                        <div>
+                                                                            <h6 className="uk-text-uppercase uk-margin-remove">Exposure</h6>
+                                                                            {node.exposure ? <p className="uk-margin-small-top">{node.exposure}</p> : <p>—</p>}
+
+                                                                        </div>
+                                                                        <div>
+                                                                            <h6 className="uk-text-uppercase uk-margin-remove">Price</h6>
+                                                                            {node.price ? <p className="uk-margin-small-top">{node.price}</p> : <p>—</p>}
+
+                                                                        </div>
+                                                                        <div>
+                                                                            <h6 className="uk-text-uppercase uk-margin-remove">CC</h6>
+                                                                            {node.common_charges_est_ ? <p className="uk-margin-small-top">{node.common_charges_est_}</p> : <p>—</p>}
+
+                                                                        </div>
+                                                                        <div>
+                                                                            <h6 className="uk-text-uppercase uk-margin-remove">RE TAX</h6>
+                                                                            {node.real_estate_taxes_est_ ? <p className="uk-margin-small-top">{node.real_estate_taxes_est_}</p> : <p>—</p>}
+
+                                                                        </div>
+                                                                        <div>
+                                                                            <h6 className="uk-text-uppercase uk-margin-remove">Status</h6>
+                                                                            {node.status ? <p className="uk-margin-small-top">{node.status}</p> : <p>—</p>}
+
+                                                                        </div>
+                                                                        <div>
+                                                                            <h6 className="uk-text-uppercase uk-margin-remove">Floor plan</h6>
+                                                                            {node.bedbath ? <a href={node.floor_plan} target="_blank" rel="noopener" className="uk-margin-small-top accent">VIEW</a> : <p>—</p>}
+
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div className="uk-card-footer">
+                                                                    {node.listing ? <a href={node.listing} target="_blank" rel="noopener" className="uk-margin-small-top accent">VIEW</a> : <p>—</p>}
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                            </div>
-                                            <div className="uk-card-body">
-                                                <div className="uk-child-width-1-2 uk-child-width-1-3@s" data-uk-grid>
-                                                    <div>
-                                                        <h6 className="uk-text-uppercase uk-margin-remove">BED / BATH</h6>
-                                                        {studios.availability.map((node) => {
-                                                            return (
-                                                                <>
-                                                                    {node.bedbath ? <p className="uk-margin-small-top">{node.bedbath}</p> : <p>—</p>}
-                                                                </>
-                                                            )
-                                                        })}
+                                                </>
+                                            )
+                                        })}
+                                    </>
+                                }
+
+                                {oneBed.hide_category !== true &&
+                                    <>
+                                        {oneBed.availability.map((node) => {
+                                            return (
+                                                <>
+                                                    <div className="uk-width-1-1" data-uk-grid>
+                                                        <div>
+                                                            <div className="uk-card uk-card-default uk-width-1-2@m">
+                                                                <div className="uk-card-header">
+                                                                    <div className="data-uk-grid-small uk-flex-middle" data-uk-grid>
+                                                                        <div className="uk-width-expand">
+
+                                                                            {node.name ? <h3 className="uk-card-title uk-margin-remove-bottom accent">{node.name}</h3> : <p>—</p>}
+
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div className="uk-card-body">
+                                                                    <div className="uk-child-width-1-2 uk-child-width-1-3@s" data-uk-grid>
+                                                                        <div>
+                                                                            <h6 className="uk-text-uppercase uk-margin-remove">BED / BATH</h6>
+                                                                            {node.bedbath ? <p className="uk-margin-small-top">{node.bedbath}</p> : <p>—</p>}
+                                                                        </div>
+                                                                        <div>
+                                                                            <h6 className="uk-text-uppercase uk-margin-remove">INT / EXT SF</h6>
+                                                                            {node.int_ext_sq ? <p className="uk-margin-small-top">{node.int_ext_sq}</p> : <p>—</p>}
+
+                                                                        </div>
+                                                                        <div>
+                                                                            <h6 className="uk-text-uppercase uk-margin-remove">Exposure</h6>
+                                                                            {node.exposure ? <p className="uk-margin-small-top">{node.exposure}</p> : <p>—</p>}
+
+                                                                        </div>
+                                                                        <div>
+                                                                            <h6 className="uk-text-uppercase uk-margin-remove">Price</h6>
+                                                                            {node.price ? <p className="uk-margin-small-top">{node.price}</p> : <p>—</p>}
+
+                                                                        </div>
+                                                                        <div>
+                                                                            <h6 className="uk-text-uppercase uk-margin-remove">CC</h6>
+                                                                            {node.common_charges_est_ ? <p className="uk-margin-small-top">{node.common_charges_est_}</p> : <p>—</p>}
+
+                                                                        </div>
+                                                                        <div>
+                                                                            <h6 className="uk-text-uppercase uk-margin-remove">RE TAX</h6>
+                                                                            {node.real_estate_taxes_est_ ? <p className="uk-margin-small-top">{node.real_estate_taxes_est_}</p> : <p>—</p>}
+
+                                                                        </div>
+                                                                        <div>
+                                                                            <h6 className="uk-text-uppercase uk-margin-remove">Status</h6>
+                                                                            {node.status ? <p className="uk-margin-small-top">{node.status}</p> : <p>—</p>}
+
+                                                                        </div>
+                                                                        <div>
+                                                                            <h6 className="uk-text-uppercase uk-margin-remove">Floor plan</h6>
+                                                                            {node.bedbath ? <a href={node.floor_plan} target="_blank" rel="noopener" className="uk-margin-small-top accent">VIEW</a> : <p>—</p>}
+
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div className="uk-card-footer">
+                                                                    {node.listing ? <a href={node.listing} target="_blank" rel="noopener" className="uk-margin-small-top accent">VIEW</a> : <p>—</p>}
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                     </div>
-                                                    <div>
-                                                        <h6 className="uk-text-uppercase uk-margin-remove">INT / EXT SF</h6>
-                                                        {studios.availability.map((node) => {
-                                                            return (
-                                                                <>
-                                                                    {node.int_ext_sq ? <p className="uk-margin-small-top">{node.int_ext_sq}</p> : <p>—</p>}
-                                                                </>
-                                                            )
-                                                        })}
+                                                </>
+                                            )
+                                        })}
+                                    </>
+                                }
+                                {twoBed.hide_category !== true &&
+                                    <>
+                                        {twoBed.availability.map((node) => {
+                                            return (
+                                                <>
+                                                    <div className="uk-width-1-1" data-uk-grid>
+                                                        <div>
+                                                            <div className="uk-card uk-card-default uk-width-1-2@m">
+                                                                <div className="uk-card-header">
+                                                                    <div className="data-uk-grid-small uk-flex-middle" data-uk-grid>
+                                                                        <div className="uk-width-expand">
+                                                                        {node.name ? <h3 className="uk-card-title uk-margin-remove-bottom accent">{node.name}</h3> : <p>—</p>}
+
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div className="uk-card-body">
+                                                                    <div className="uk-child-width-1-2 uk-child-width-1-3@s" data-uk-grid>
+                                                                        <div>
+                                                                            <h6 className="uk-text-uppercase uk-margin-remove">BED / BATH</h6>
+                                                                            {node.bedbath ? <p className="uk-margin-small-top">{node.bedbath}</p> : <p>—</p>}
+                                                                        </div>
+                                                                        <div>
+                                                                            <h6 className="uk-text-uppercase uk-margin-remove">INT / EXT SF</h6>
+                                                                            {node.int_ext_sq ? <p className="uk-margin-small-top">{node.int_ext_sq}</p> : <p>—</p>}
+
+                                                                        </div>
+                                                                        <div>
+                                                                            <h6 className="uk-text-uppercase uk-margin-remove">Exposure</h6>
+                                                                            {node.exposure ? <p className="uk-margin-small-top">{node.exposure}</p> : <p>—</p>}
+
+                                                                        </div>
+                                                                        <div>
+                                                                            <h6 className="uk-text-uppercase uk-margin-remove">Price</h6>
+                                                                            {node.price ? <p className="uk-margin-small-top">{node.price}</p> : <p>—</p>}
+
+                                                                        </div>
+                                                                        <div>
+                                                                            <h6 className="uk-text-uppercase uk-margin-remove">CC</h6>
+                                                                            {node.common_charges_est_ ? <p className="uk-margin-small-top">{node.common_charges_est_}</p> : <p>—</p>}
+
+                                                                        </div>
+                                                                        <div>
+                                                                            <h6 className="uk-text-uppercase uk-margin-remove">RE TAX</h6>
+                                                                            {node.real_estate_taxes_est_ ? <p className="uk-margin-small-top">{node.real_estate_taxes_est_}</p> : <p>—</p>}
+
+                                                                        </div>
+                                                                        <div>
+                                                                            <h6 className="uk-text-uppercase uk-margin-remove">Status</h6>
+                                                                            {node.status ? <p className="uk-margin-small-top">{node.status}</p> : <p>—</p>}
+
+                                                                        </div>
+                                                                        <div>
+                                                                            <h6 className="uk-text-uppercase uk-margin-remove">Floor plan</h6>
+                                                                            {node.bedbath ? <a href={node.floor_plan} target="_blank" rel="noopener" className="uk-margin-small-top accent">VIEW</a> : <p>—</p>}
+
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div className="uk-card-footer">
+                                                                    {node.listing ? <a href={node.listing} target="_blank" rel="noopener" className="uk-margin-small-top accent">VIEW</a> : <p>—</p>}
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                     </div>
-                                                    <div>
-                                                        <h6 className="uk-text-uppercase uk-margin-remove">Exposure</h6>
-                                                        {studios.availability.map((node) => {
-                                                            return (
-                                                                <>
-                                                                    {node.exposure ? <p className="uk-margin-small-top">{node.exposure}</p> : <p>—</p>}
-                                                                </>
-                                                            )
-                                                        })}
-                                                    </div>
-                                                    <div>
-                                                        <h6 className="uk-text-uppercase uk-margin-remove">Price</h6>
-                                                        {studios.availability.map((node) => {
-                                                            return (
-                                                                <>
-                                                                    {node.price ? <p className="uk-margin-small-top">{node.price}</p> : <p>—</p>}
-                                                                </>
-                                                            )
-                                                        })}
-                                                    </div>
-                                                    <div>
-                                                        <h6 className="uk-text-uppercase uk-margin-remove">CC</h6>
-                                                        {studios.availability.map((node) => {
-                                                            return (
-                                                                <>
-                                                                    {node.common_charges_est_ ? <p className="uk-margin-small-top">{node.common_charges_est_}</p> : <p>—</p>}
-                                                                </>
-                                                            )
-                                                        })}
-                                                    </div>
-                                                    <div>
-                                                        <h6 className="uk-text-uppercase uk-margin-remove">RE TAX</h6>
-                                                        {studios.availability.map((node) => {
-                                                            return (
-                                                                <>
-                                                                    {node.real_estate_taxes_est_ ? <p className="uk-margin-small-top">{node.real_estate_taxes_est_}</p> : <p>—</p>}
-                                                                </>
-                                                            )
-                                                        })}
-                                                    </div>
-                                                    <div>
-                                                        <h6 className="uk-text-uppercase uk-margin-remove">Status</h6>
-                                                        {studios.availability.map((node) => {
-                                                            return (
-                                                                <>
-                                                                    {node.status ? <p className="uk-margin-small-top">{node.status}</p> : <p>—</p>}
-                                                                </>
-                                                            )
-                                                        })}
-                                                    </div>
-                                                    <div>
-                                                        <h6 className="uk-text-uppercase uk-margin-remove">Floor plan</h6>
-                                                        {studios.availability.map((node) => {
-                                                            return (
-                                                                <>
-                                                                    {node.bedbath ? <a href={node.floor_plan} target="_blank" rel="noopener" className="uk-margin-small-top accent">VIEW</a> : <p>—</p>}
-                                                                </>
-                                                            )
-                                                        })}
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div className="uk-card-footer">
-                                                {studios.availability.map((node) => {
-                                                    return (
-                                                        <>
-                                                            {node.listing ? <a href={node.listing} target="_blank" rel="noopener" className="uk-margin-small-top accent">VIEW</a> : <p>—</p>}
-                                                        </>
-                                                    )
-                                                })}
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                                </>
+                                            )
+                                        })}
+                                    </>
+                                }
                             </div>
                         </div>
                     </div>

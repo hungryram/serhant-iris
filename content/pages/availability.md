@@ -17,8 +17,8 @@ studio:
       common_charges_est_: $573
       real_estate_taxes_est_: $1,217
       status: AVAILABLE
-      floor_plan:
-      listing:
+      floor_plan: /uploads/westly--8c.png
+      listing: https://www.serhant.com/listings/3767933
 one_bedroom:
   hide_category: false
   availability:
