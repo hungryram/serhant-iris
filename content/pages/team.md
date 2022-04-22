@@ -5,7 +5,7 @@ search_engine_optimization:
     title_tag: Team | IRIS Tribeca
 team:
     -
-        heading: ABN Real Estate
+        heading: ABN Realty
         body: >-
             ABN Realty LLC is a family owned real estate development company
             based in New York City. With over one million square feet of
