@@ -1,16 +1,19 @@
 import * as React from "react"
 import Layout from "../components/Layout"
-import Main from "../images/Dorothy-Hong_Tribeca_12-2013_1807.jpg"
-import Art from "../images/art-and-culture.png"
-import Dining from "../images/Dining.png"
-import Health from "../images/health-and-fitness.png"
-import Education from "../images/Education-Pace-University.png"
 import { StaticImage } from "gatsby-plugin-image"
+import Seo from "../components/Seo"
+import { graphql } from "gatsby"
 
 
-export default function Neighborhood() {
+export default function Neighborhood({ data }) {
+    const seo = data.markdownRemark.frontmatter.search_engine_optimization
+
     return (
         <Layout>
+            <Seo
+                title={seo.title_tag}
+                description={seo.meta_description}
+            />
             <div className="uk-animation-slide-bottom-small">
                 <StaticImage
                     src="../images/Dorothy-Hong_Tribeca_12-2013_1807.jpg"
@@ -66,14 +69,14 @@ export default function Neighborhood() {
                         <div>
                             <h2 className="accent uk-heading-small editable">Dining</h2>
                             <p className="editable">There is no shortage of incredible dining options
-in Tribeca. There are local staples, relaxed bistros,
-lively bars, and everything in-between – all just a
-short distance away from Iris. Serafina, Gran
-Morsi, CUT by Wolfgang Puck, and The Odeon are
-just a handful of neighborhood favorites. </p>
+                                in Tribeca. There are local staples, relaxed bistros,
+                                lively bars, and everything in-between – all just a
+                                short distance away from Iris. Serafina, Gran
+                                Morsi, CUT by Wolfgang Puck, and The Odeon are
+                                just a handful of neighborhood favorites. </p>
                         </div>
                         <div>
-                        <StaticImage
+                            <StaticImage
                                 src="../images/Dining.png"
                                 alt="Iris Tribeca nearby restaurants"
                             />
@@ -83,13 +86,13 @@ just a handful of neighborhood favorites. </p>
                         <div>
                             <h2 className="accent uk-heading-small editable">Health & Wellness</h2>
                             <p className="editable">Tribeca is perfected situated Hudson River Park
-offering easy access to greenspace. Equinox and
-Orangetheory and a host of unique studios from
-pilates to yoga to strength training are a fitness
-lover’s dream.</p>
+                                offering easy access to greenspace. Equinox and
+                                Orangetheory and a host of unique studios from
+                                pilates to yoga to strength training are a fitness
+                                lover’s dream.</p>
                         </div>
                         <div>
-                        <StaticImage
+                            <StaticImage
                                 src="../images/health-and-fitness.png"
                                 alt="Hudson River Park"
                             />
@@ -99,14 +102,14 @@ lover’s dream.</p>
                         <div>
                             <h2 className="accent uk-heading-small editable">Education</h2>
                             <p className="editable">While Pace University, Avenues, and FIT attract students
-from around the world, Tribeca is close to some of the
-most sought-after schools for all ages. Blue School,
-Downtown Little School, and Hawthorne Country Day
-School offer a multitude of opportunities for children and
-are within a short distance for an ideal morning commute.</p>
+                                from around the world, Tribeca is close to some of the
+                                most sought-after schools for all ages. Blue School,
+                                Downtown Little School, and Hawthorne Country Day
+                                School offer a multitude of opportunities for children and
+                                are within a short distance for an ideal morning commute.</p>
                         </div>
                         <div>
-                        <StaticImage
+                            <StaticImage
                                 src="../images/Education-Pace-University.png"
                                 alt="Education Pace University"
                             />
@@ -119,3 +122,16 @@ are within a short distance for an ideal morning commute.</p>
         </Layout>
     )
 }
+
+export const query = graphql`
+{
+    markdownRemark (fileAbsolutePath: {regex: "/neighborhood/"}) {
+        frontmatter {
+            search_engine_optimization {
+                title_tag
+                meta_description
+            }
+        }
+    }
+}
+`

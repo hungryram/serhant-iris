@@ -1,8 +1,8 @@
 ---
 title: Residences
 search_engine_optimization:
-    title_tag:
-    meta_description:
+    title_tag: Residences | Iris Tribeca
+    meta_description: Experience modern living at Iris Tribeca – offering residences with ample natural light, privacy, and tranquility. Integrated technology like smart-home ready pre-wiring, sound-dampening floor-to-ceiling curtain wall windows and flooring.
 living_spaces:
     -
         photo: /images/ddp-8172-pano-web.jpg

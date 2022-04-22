@@ -1,13 +1,18 @@
 import * as React from "react"
 import { graphql, Link } from "gatsby"
 import Layout from "../components/Layout"
-import Slide from "../images/19_Park_place_garden_0523_opt.jpg"
 import { StaticImage } from "gatsby-plugin-image"
+import Seo from "../components/Seo"
 
 export default function Amenities({ data }) {
     const content = data.markdownRemark.frontmatter
+    const seo = data.markdownRemark.frontmatter.search_engine_optimization
     return (
         <Layout>
+            <Seo 
+                title={seo.title_tag}
+                description = {seo.meta_description}
+            />
             <div className="uk-animation-slide-bottom-small">
                 <StaticImage
                     src="../images/19_Park_place_garden_0523_opt.jpg"
@@ -63,6 +68,10 @@ export const query = graphql`
       frontmatter {
         gallery {
 			photo
+        }
+        search_engine_optimization {
+            title_tag
+            meta_description
         }
       }
     }

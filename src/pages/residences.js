@@ -1,13 +1,19 @@
 import * as React from "react"
 import Layout from "../components/Layout"
-import Slide from "../../static/images/lviing-room-iris-tribeca.jpg"
 import { graphql, Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
+import Seo from "../components/Seo"
 
 export default function Residences({ data }) {
     const content = data.markdownRemark.frontmatter
+    const seo = data.markdownRemark.frontmatter.search_engine_optimization
+
     return (
         <Layout>
+            <Seo
+                title={seo.title_tag}
+                description={seo.meta_description}
+            />
             <div className="uk-animation-slide-bottom-small">
                 <StaticImage
                     src="../../static/images/lviing-room-iris-tribeca.jpg"
@@ -28,7 +34,7 @@ export default function Residences({ data }) {
                             keycard elevator access blend seamlessly with organic surfaces and tones.
                             High-efficiency central heating and cooling and Miele washers/dryers come
                             standard.</p>
-                            <a href="/images/IRIS-fact_sheet.pdf" target="_blank" rel="noopener" className="uk-h3 accent text-underline">Download Fact Sheet</a>
+                        <a href="/images/IRIS-fact_sheet.pdf" target="_blank" rel="noopener" className="uk-h3 accent text-underline">Download Fact Sheet</a>
                     </div>
                 </div>
             </div>
@@ -37,12 +43,12 @@ export default function Residences({ data }) {
                 <div className="uk-container">
                     <div className="uk-position-relative uk-visible-toggle uk-light" data-uk-slideshow>
 
-                    <ul className="uk-slideshow-items" data-uk-lightbox>
-                        {content.living_spaces.map((node) => {
+                        <ul className="uk-slideshow-items" data-uk-lightbox>
+                            {content.living_spaces.map((node) => {
                                 return (
                                     <li>
                                         <Link to={node.photo}>
-                                            <img src= {node.photo} alt="" data-uk-cover />
+                                            <img src={node.photo} alt="" data-uk-cover />
                                         </Link>
                                     </li>
                                 )
@@ -72,12 +78,12 @@ export default function Residences({ data }) {
                 <div className="uk-container">
                     <div className="uk-position-relative uk-visible-toggle uk-light" data-uk-slideshow>
 
-                    <ul className="uk-slideshow-items" data-uk-lightbox>
-                        {content.kitchen.map((node) => {
+                        <ul className="uk-slideshow-items" data-uk-lightbox>
+                            {content.kitchen.map((node) => {
                                 return (
                                     <li>
                                         <Link to={node.photo}>
-                                            <img src= {node.photo} alt="" data-uk-cover />
+                                            <img src={node.photo} alt="" data-uk-cover />
                                         </Link>
                                     </li>
                                 )
@@ -109,12 +115,12 @@ export default function Residences({ data }) {
                 <div className="uk-container">
                     <div className="uk-position-relative uk-visible-toggle uk-light" data-uk-slideshow>
 
-                    <ul className="uk-slideshow-items" data-uk-lightbox>
-                        {content.bedrooms.map((node) => {
+                        <ul className="uk-slideshow-items" data-uk-lightbox>
+                            {content.bedrooms.map((node) => {
                                 return (
                                     <li>
                                         <Link to={node.photo}>
-                                            <img src= {node.photo} alt="" data-uk-cover />
+                                            <img src={node.photo} alt="" data-uk-cover />
                                         </Link>
                                     </li>
                                 )
@@ -145,11 +151,11 @@ export default function Residences({ data }) {
                     <div className="uk-position-relative uk-visible-toggle uk-light" data-uk-slideshow>
 
                         <ul className="uk-slideshow-items" data-uk-lightbox>
-                        {content.bathrooms.map((node) => {
+                            {content.bathrooms.map((node) => {
                                 return (
                                     <li>
                                         <Link to={node.photo}>
-                                            <img src= {node.photo} alt="" data-uk-cover />
+                                            <img src={node.photo} alt="" data-uk-cover />
                                         </Link>
                                     </li>
                                 )
@@ -182,6 +188,10 @@ export const query = graphql`
 {
     markdownRemark(fileAbsolutePath: {regex: "/residences/"}) {
       frontmatter {
+        search_engine_optimization {
+            title_tag
+            meta_description
+        }
         bathrooms {
 			photo
         }

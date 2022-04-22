@@ -5,16 +5,21 @@ import { AiOutlineFilePdf } from "@react-icons/all-files/ai/AiOutlineFilePdf"
 import { StaticImage } from "gatsby-plugin-image"
 import { IconContext } from "@react-icons/all-files"
 import * as Styles from "../styles/avail.module.css"
+import Seo from "../components/Seo"
 
 export default function Availability({ data }) {
     const studios = data.markdownRemark.frontmatter.studio
     const oneBed = data.markdownRemark.frontmatter.one_bedroom
     const twoBed = data.markdownRemark.frontmatter.two_bedroom
     const threeBed = data.markdownRemark.frontmatter.three_bedroom
-
+    const seo = data.markdownRemark.frontmatter.search_engine_optimization
     return (
 
         <Layout>
+            <Seo
+                title={seo.title_tag}
+                description={seo.meta_description}
+            />
             <div className="uk-position-relative">
                 <StaticImage
                     src="../images/park-place-background.jpg"
@@ -248,7 +253,7 @@ export default function Availability({ data }) {
                                                                 <div className="uk-card-header">
                                                                     <div className="data-uk-grid-small uk-flex-middle" data-uk-grid>
                                                                         <div className="uk-width-expand">
-                                                                        {node.name ? <h3 className="uk-card-title uk-margin-remove-bottom accent">{node.name}</h3> : <p>—</p>}
+                                                                            {node.name ? <h3 className="uk-card-title uk-margin-remove-bottom accent">{node.name}</h3> : <p>—</p>}
 
                                                                         </div>
                                                                     </div>
@@ -392,7 +397,7 @@ export default function Availability({ data }) {
                                                                 <div className="uk-card-header">
                                                                     <div className="data-uk-grid-small uk-flex-middle" data-uk-grid>
                                                                         <div className="uk-width-expand">
-                                                                        {node.name ? <h3 className="uk-card-title uk-margin-remove-bottom accent">{node.name}</h3> : <p>—</p>}
+                                                                            {node.name ? <h3 className="uk-card-title uk-margin-remove-bottom accent">{node.name}</h3> : <p>—</p>}
 
                                                                         </div>
                                                                     </div>

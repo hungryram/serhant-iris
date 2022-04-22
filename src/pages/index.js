@@ -1,8 +1,10 @@
 import * as React from "react"
-import { Link } from "gatsby"
+import { graphql, Link } from "gatsby"
 import Hero from "../images/park-place-hero.jpg"
 import Layout from "../components/Layout";
 import { StaticImage } from "gatsby-plugin-image";
+import Seo from "../components/Seo";
+import data from "../../data/seo.json"
 
 export default function Building() {
 
@@ -10,9 +12,14 @@ export default function Building() {
         backgroundImage: 'url(' + Hero + ')'
     };
 
+
+
     return (
         <Layout>
-
+            <Seo
+                title={data.title_tag}
+                description={data.meta_description}
+            />
             <div className="uk-position-relative">
             <StaticImage 
                     src="../images/park-place-hero.jpg"

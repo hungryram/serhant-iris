@@ -1,8 +1,8 @@
 ---
 title: Team
 search_engine_optimization:
-    meta_description: The team that brings you IRIS Tribeca
-    title_tag: Team | IRIS Tribeca
+    meta_description: The team that brings you IRIS Tribeca - Ismael Leyva Architects, ABN Realty, and SERHANT New Development
+    title_tag: Team | Iris Tribeca
 team:
     -
         heading: Ismael Leyva Architects

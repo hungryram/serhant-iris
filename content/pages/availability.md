@@ -1,11 +1,9 @@
 ---
 title: Availability
 search_engine_optimization:
-  title_tag: Availability | The Westly
+  title_tag: Availability | Iris Tribeca
   meta_description: >-
-    Ready to live the luxury lifestyle on the Upper West Side? View our
-    residence availability and contact the team at The Westly to start your
-    luxurious living.
+    Interested in purchasing a luxury condo? View our availability at 19 Park Place New York. Prices starting at $1,150,000.
 studio:
   hide_category: false
   availability:
