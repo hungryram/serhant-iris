@@ -5,9 +5,10 @@ search_engine_optimization:
     meta_description:
 living_spaces:
     -
-        photo: /images/ddp-8212-web.jpg
-    -
         photo: /images/ddp-8172-pano-web.jpg
+    -
+        photo: /images/ddp-8212-web.jpg
+
     -
         photo: /images/ddp-8279-web.jpg
     -
@@ -16,11 +17,12 @@ living_spaces:
         photo: /images/ddp-8681-pano-web.jpg
 kitchen:
     -
-        photo: /images/DDP_8558-web.jpg
-    -
         photo: /images/DDP_8237-web.jpg
     -
         photo: /images/DDP_8623-pano-web.jpg
+    -
+        photo: /images/DDP_8558-web.jpg
+
     -
         photo: /images/DDP_8773-web.jpg
 bedrooms:

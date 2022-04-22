@@ -18,12 +18,12 @@ studio:
       real_estate_taxes_est_: $1,217
       status: AVAILABLE
       floor_plan: /uploads/westly--8c.png
-      listing: https://www.serhant.com/listings/3767933
+      listing: https://serhant.com/listings/3788082
 one_bedroom:
   hide_category: false
   availability:
     - name: 3B
-      bedbath: 0/1
+      bedbath: 1/1
       int_ext_sq: 817/60
       exposure: 'N'
       price: $1,350,000
@@ -31,7 +31,7 @@ one_bedroom:
       real_estate_taxes_est_: $1,389
       status: AVAILABLE
       floor_plan: /uploads/westly--8c.png
-      listing: https://www.serhant.com/listings/3767933
+      listing: https://serhant.com/listings/3788083
 two_bedroom:
   hide_category: false
   availability:
@@ -44,7 +44,7 @@ two_bedroom:
       real_estate_taxes_est_: $2,405
       status: AVAILABLE
       floor_plan: /uploads/westly--8c.png
-      listing: https://www.serhant.com/listings/3767933
+      listing: https://www.serhant.com/listings/3788100
     - name: 12A
       bedbath: 2/2
       int_ext_sq: 1,336/382
@@ -52,9 +52,9 @@ two_bedroom:
       price: ' $2,800,000'
       common_charges_est_: $1,202
       real_estate_taxes_est_: $2,405
-      status:
+      status: AVAILABLE
       floor_plan:
-      listing:
+      listing: https://serhant.com/listings/3788102
 three_bedroom:
   hide_category: false
   availability:
@@ -67,6 +67,6 @@ three_bedroom:
       real_estate_taxes_est_: $2,857
       status: AVAILABLE
       floor_plan: /uploads/westly--8c.png
-      listing: https://www.serhant.com/listings/3767933
+      listing: https://www.serhant.com/listings/3788107
 ---
 

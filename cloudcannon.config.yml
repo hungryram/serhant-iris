@@ -13,9 +13,15 @@ paths:
   uploads: static/images
   static: static
 _inputs:
+  floor_plan:
+    type: image
   body:
     type: markdown
+  image:
+    type: image
   logo:
+    type: image
+  favicon:
     type: image
   photo:
     type: image

@@ -5,17 +5,6 @@ search_engine_optimization:
     title_tag: Team | IRIS Tribeca
 team:
     -
-        heading: ABN Realty
-        body: >-
-            ABN Realty LLC is a family owned real estate development company
-            based in New York City. With over one million square feet of
-            holdings throughout the United States, Australia, and Asia, the
-            family has maintained their commitment to best in class practices in
-            development, leasing, and management over the past fifty years. 19
-            Park Place was conceived by the late ABN visionary and founder,
-            Nancy Lee Luk, and was realized by her husband and children.
-        subheading: Developer
-    -
         heading: Ismael Leyva Architects
         subheading: Architect
         body: >-
@@ -31,6 +20,15 @@ team:
             buildings Icon, Place 57, Oro, Yves and also the design of the
             luxury residences at Time Warner Center, 101 Warren, Superior Ink,
             The Chatham and The Brompton.
+    -
+        heading: ABN Realty
+        body: >-
+            ABN Realty LLC is a family owned real estate development company
+            based in New York City. With over one million square feet of
+            holdings throughout the United States, Australia, and Asia, the
+            family has maintained their commitment to best in class practices in
+            development, leasing, and management over the past fifty years.
+        subheading: Developer
     -
         heading: SERHANT. New Dev
         subheading: EXCLUSIVE MARKETING AND SALES
