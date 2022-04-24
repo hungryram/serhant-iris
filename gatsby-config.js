@@ -10,7 +10,10 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        "icon": "src/images/icon.png"
+        "icon": "src/images/icon.png",
+        name: `Iris Tribeca`,
+        background_color: `#9FA2D0`,
+        theme_color: `#9FA2D0`
       }
     },
     "gatsby-transformer-remark",
