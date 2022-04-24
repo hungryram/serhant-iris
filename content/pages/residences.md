@@ -5,7 +5,7 @@ search_engine_optimization:
     meta_description: Experience modern living at Iris Tribeca – offering residences with ample natural light, privacy, and tranquility. Integrated technology like smart-home ready pre-wiring, sound-dampening floor-to-ceiling curtain wall windows and flooring.
 living_spaces:
     -
-        photo: /images/ddp-8172-pano-web.jpg
+        photo: /images/DDP_8172-pano-web-optimized.jpg
     -
         photo: /images/ddp-8212-web.jpg
 

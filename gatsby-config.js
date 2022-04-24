@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `iris-gatsby`,
-    siteUrl: `https://www.yourdomain.tld`
+    title: `Iris Tribeca`,
+    siteUrl: `https://www.iristribeca.com/`
   },
   plugins: [
     "gatsby-plugin-image",

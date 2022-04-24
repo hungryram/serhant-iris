@@ -16,7 +16,7 @@ export default function Neighborhood({ data }) {
             />
             <div className="uk-animation-slide-bottom-small">
                 <StaticImage
-                    src="../images/Dorothy-Hong_Tribeca_12-2013_1807.jpg"
+                    src="../images/Dorothy-Hong_Tribeca_12-2013_180-high-res.jpg"
                     className="uk-width-1-1"
                     alt="19 Park Place neighborhood"
                 />
