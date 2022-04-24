@@ -41,7 +41,7 @@ export default function Contact({ data }) {
                                         <form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true" className="uk-grid-small inquire__form" data-uk-grid action="/thank-you">
                                             <input name="bot-field" type="hidden" />
                                             <input type="hidden" name="form-name" value="contact" />
-                                            <input type="hidden" name="Subject" value="The Westly Inquiry Form" />
+                                            <input type="hidden" name="Subject" value="Iris Tribeca Inquiry Form" />
                                             <div className="uk-width-1-1">
                                                 <p className="uk-margin-remove">NAME</p>
                                             </div>
