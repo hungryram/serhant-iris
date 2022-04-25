@@ -34,7 +34,7 @@ export default function Residences({ data }) {
                             keycard elevator access blend seamlessly with organic surfaces and tones.
                             High-efficiency central heating and cooling and Miele washers/dryers come
                             standard.</p>
-                        <a href="/images/IRIS-fact_sheet.pdf" target="_blank" rel="noopener" className="uk-h3 accent text-underline">Download Fact Sheet</a>
+                        <a href="/images/IRIS-fact_sheet_new.pdf" target="_blank" rel="noopener" className="uk-h3 accent text-underline">Download Fact Sheet</a>
                     </div>
                 </div>
             </div>

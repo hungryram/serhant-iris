@@ -4,24 +4,42 @@ import Hero from "../images/park-place-hero.jpg"
 import Layout from "../components/Layout";
 import { StaticImage } from "gatsby-plugin-image";
 import Seo from "../components/Seo";
-import data from "../../data/seo.json"
+import homeSeo from "../../data/seo.json"
 
-export default function Building() {
+export default function Building({ data }) {
 
     const background = {
         backgroundImage: 'url(' + Hero + ')'
     };
 
-
+    const script = require("../scripts/script")
 
     return (
         <Layout>
             <Seo
-                title={data.title_tag}
-                description={data.meta_description}
+                title={homeSeo.title_tag}
+                description={homeSeo.meta_description}
             />
+
+
+{data.markdownRemark.frontmatter.video &&
+    <div className="uk-modal-full uk-open splash-video" data-uk-modal style={{ display: 'block', overflow: 'hidden' }}>
+    <div>
+        <div>
+            <div>
+              <video src={data.markdownRemark.frontmatter.video} autoplay muted playsinline data-uk-cover></video>
+            </div>
+            <div className="enter">
+              <button class="uk-button uk-button-primary uk-modal-close" type="button">Enter Site</button>
+            </div>
+        </div>
+    </div>
+  </div>
+}
+
+
             <div className="uk-position-relative">
-            <StaticImage 
+                <StaticImage
                     src="../images/park-place-hero.jpg"
                     className="bg uk-width-1-1"
                 />
@@ -55,3 +73,15 @@ export default function Building() {
         </Layout>
     )
 }
+
+export const query = graphql`
+{
+    markdownRemark(fileAbsolutePath: {regex: "/index/"}) {
+      frontmatter {
+        title
+        video
+      }
+    }
+  }
+  
+`

@@ -45,6 +45,20 @@ html body {
     line-height: 1.8;
 }
 
+.enter {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    bottom: 10%;
+}
+
+.hide-intro {
+    display: none!important;
+}
+
 .uk-table th {
     color: #000;
 }
