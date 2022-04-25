@@ -147,3 +147,17 @@ body .uk-table-large td, body .uk-table-large th {
     position: absolute!important;
     height: 100%;
 }
+
+.fadeOut {
+    opacity: 0;
+    transition: opacity 1.8s linear;
+  }
+
+  .videoOverlay{
+    position: fixed;
+    top:0;
+    left:0;
+    height: 100vh;
+    width:100vw;
+    z-index: 50;
+  }

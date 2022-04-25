@@ -12,13 +12,25 @@ export default function Building({ data }) {
         backgroundImage: 'url(' + Hero + ')'
     };
 
+    const [ fade, setFade ] = React.useState(false)
     const [ renderVideo, setRenderVideo ] = React.useState(true)
+    const [ renderPage, setRenderPage ] = React.useState(false)
+
+    const enterSite = () => {
+        setFade(true)
+        setRenderPage(true)
+        setTimeout(function(){
+            setRenderVideo(false)       
+        }, 1800);
+    }
 
     React.useEffect(() => {
         setTimeout(function(){
-            setRenderVideo(false)
+            enterSite()
         }, 8000);
     }, [])
+
+
 
 
     return (
@@ -29,19 +41,18 @@ export default function Building({ data }) {
             />
 
             {renderVideo ?
-                <div className="uk-modal-full uk-open splash-video" data-uk-modal style={{ display: 'block', overflow: 'hidden' }}>
+                <div className={`videoOverlay ${fade ? 'fadeOut' : ''}`}>
                     <div>
                         <div>
-                            <div>
-                                <video src={data.markdownRemark.frontmatter.video} autoplay muted playsinline data-uk-cover></video>
-                            </div>
-                            <div className="enter">
-                                <button className="uk-button uk-button-primary" onClick={() => setRenderVideo(false)}>Enter Site</button>
-                            </div>
+                            <video src={data.markdownRemark.frontmatter.video} autoPlay muted playsInline data-uk-cover></video>
+                        </div>
+                        <div className="enter">
+                            <button className="uk-button uk-button-primary" onClick={() => enterSite()}>Enter Site</button>
                         </div>
                     </div>
                 </div>
-            :
+            : null }
+            { renderPage ?
                 <Layout>
                     <div className="uk-position-relative">
                         <StaticImage
@@ -76,10 +87,7 @@ export default function Building({ data }) {
                         </div>
                     </div>
                 </Layout>
-            }
-
-
-
+            : null }
         </>
     )
 }
