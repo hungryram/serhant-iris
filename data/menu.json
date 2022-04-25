@@ -1,11 +1,6 @@
 {
     "menu": [
       {
-        "name": "Building",
-        "link": "/building",
-        "menu": null
-      },
-      {
         "name": "Residences",
         "link": "/residences"
       },
