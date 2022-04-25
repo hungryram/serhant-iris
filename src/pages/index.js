@@ -36,7 +36,7 @@ export default function Building({ data }) {
                                 <video src={data.markdownRemark.frontmatter.video} autoplay muted playsinline data-uk-cover></video>
                             </div>
                             <div className="enter">
-                                <Link className="uk-button uk-button-primary" to="/building">Enter Site</Link>
+                                <button className="uk-button uk-button-primary" onClick={() => setRenderVideo(false)}>Enter Site</button>
                             </div>
                         </div>
                     </div>
