@@ -56,13 +56,13 @@ export default function Building({ data }) {
                 <Layout>
                     <div className="uk-position-relative">
                         <StaticImage
-                            src="../images/park-place-hero.jpg"
+                            src="../images/hero-19-place-place-ny.jpg"
                             className="bg uk-width-1-1"
                         />
                         <div className="uk-section uk-section-large uk-position-relative hero-section">
                             <div className="uk-container uk-container-large uk-animation-slide-bottom-small">
                                 <div className="uk-flex uk-flex-left">
-                                    <div className="uk-width-2xlarge uk-text-center">
+                                    <div className="uk-width-2xlarge uk-text-center" uk-parallax="start: 0%; end: 10%; y: -200; easing: 0;opacity: 1,0; y: -100">
                                         <p className="uk-text-uppercase editable">Welcome to</p>
                                         <h1 className="uk-heading-medium uk-margin-remove editable">Tribecas Newest<br />Luxury Tower</h1>
                                         <p className="editable">STUDIO - 3 BEDROOMS STARTING AT $1,150,000</p>

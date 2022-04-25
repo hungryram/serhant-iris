@@ -150,7 +150,7 @@ body .uk-table-large td, body .uk-table-large th {
 
 .fadeOut {
     opacity: 0;
-    transition: opacity 1.8s linear;
+    transition: opacity 1.2s linear;
   }
 
   .videoOverlay{

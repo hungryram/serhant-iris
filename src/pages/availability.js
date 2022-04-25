@@ -23,7 +23,7 @@ export default function Availability({ data }) {
             <div className="uk-position-relative">
                 <StaticImage
                     src="../images/park-place-background.jpg"
-                    className="bg"
+                    className="bg uk-width-1-1"
                     alt="Iris Tribeca"
                 />
                 <div style={{ paddingTop: '100px', paddingBottom: '100px' }}>
