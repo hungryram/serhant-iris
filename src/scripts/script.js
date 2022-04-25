@@ -3,7 +3,9 @@ function hideIntro() {
     element.classList.add("hide-intro");
  }
 
+
 // When the window is loaded....
+if (typeof window !== `undefined`){
 window.addEventListener("load", function() {
 
 // Check to see if the cookie indicates a first-time visit
@@ -13,3 +15,4 @@ setTimeout(function(){
     document.querySelector(".splash-video").style.display = "none";
     }, 8000);
 });
+}
