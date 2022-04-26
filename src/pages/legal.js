@@ -16,6 +16,8 @@ export default function Legal({ data }) {
                 <div className="uk-container">
                     <h1>Legal</h1>
                     <p>All measurements are approximate and subject to normal construction variances and tolerances. The complete offering terms are in an offering plan available from Sponsor. Sponsor reserves the right to make changes in accordance with the terms of the offering plan. File No: CD13-02841. Sponsor: ABN Realty LLC, 420 Madison Avenue, 8th Fl., New York, NY 10017. Exclusive Sales and Marketing by SERHANT. New Development. Equal Housing Opportunity.</p>
+                    <a href="https://www.serhant.com/SERHANT.%20SOP.pdf" target="_blank" rel="noopener noferrer" className="accent">RE Legal SOP</a><br />
+                    <a href="https://dos.ny.gov/system/files/documents/2021/08/fairhousingnotice.pdf" target="_blank" rel="noopener noferrer" className="accent">Fair Housing Notice</a>
                 </div>
             </div>
         </Layout>
