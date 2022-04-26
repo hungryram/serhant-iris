@@ -22,7 +22,7 @@ export default function Availability({ data }) {
             />
             <div className="uk-position-relative">
                 <StaticImage
-                    src="../images/park-place-background.jpg"
+                    src="../images/availability-19-park-place.jpg"
                     className="bg uk-width-1-1"
                     alt="Iris Tribeca"
                 />
@@ -247,7 +247,7 @@ export default function Availability({ data }) {
                                         {studios.availability.map((node) => {
                                             return (
                                                 <>
-                                                    <div className="uk-width-1-1" data-uk-grid>
+                                                    <div className="uk-child-width-1-1@s" data-uk-grid>
                                                         <div>
                                                             <div className="uk-card uk-card-default uk-width-1-2@m">
                                                                 <div className="uk-card-header">
@@ -319,7 +319,7 @@ export default function Availability({ data }) {
                                         {oneBed.availability.map((node) => {
                                             return (
                                                 <>
-                                                    <div className="uk-width-1-1" data-uk-grid>
+                                                    <div className="uk-width-child-1-1 uk-margin" data-uk-grid>
                                                         <div>
                                                             <div className="uk-card uk-card-default uk-width-1-2@m">
                                                                 <div className="uk-card-header">
@@ -391,7 +391,7 @@ export default function Availability({ data }) {
                                         {twoBed.availability.map((node) => {
                                             return (
                                                 <>
-                                                    <div className="uk-width-1-1" data-uk-grid>
+                                                    <div className="uk-child-width-1-1 uk-margin" data-uk-grid>
                                                         <div>
                                                             <div className="uk-card uk-card-default uk-width-1-2@m">
                                                                 <div className="uk-card-header">

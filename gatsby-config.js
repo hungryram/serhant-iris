@@ -41,6 +41,14 @@ module.exports = {
         "name": "content",
         "path": `${__dirname}/content/pages/`
       },
-    }
+    },
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingIds: [
+          "G-CT6CX17MHB", // Google Analytics / GA
+        ],
+      },
+    },
   ]
 };
