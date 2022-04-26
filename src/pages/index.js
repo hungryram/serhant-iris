@@ -27,7 +27,7 @@ export default function Building({ data }) {
     React.useEffect(() => {
         setTimeout(function(){
             enterSite()
-        }, 8000);
+        }, 80000);
     }, [])
 
 
@@ -41,7 +41,7 @@ export default function Building({ data }) {
             />
 
             {renderVideo ?
-                <div className={`videoOverlay ${fade ? 'fadeOut' : ''}`}>
+                <div className={`videoOverlay uk-cover-container ${fade ? 'fadeOut' : ''}`}>
                     <div>
                         <div>
                             <video src={data.markdownRemark.frontmatter.video} autoPlay muted playsInline data-uk-cover></video>
