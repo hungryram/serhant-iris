@@ -55,6 +55,12 @@ html body {
     bottom: 10%;
 }
 
+@media screen and (max-width: 800px) {
+    .enter {
+        bottom: 20%;
+    }
+}
+
 .hide-intro {
     display: none!important;
 }

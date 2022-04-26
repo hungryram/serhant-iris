@@ -27,7 +27,7 @@ export default function Building({ data }) {
     React.useEffect(() => {
         setTimeout(function(){
             enterSite()
-        }, 80000);
+        }, 8000);
     }, [])
 
 
