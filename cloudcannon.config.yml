@@ -25,3 +25,5 @@ _inputs:
     type: image
   photo:
     type: image
+editor:
+  default_path: /
