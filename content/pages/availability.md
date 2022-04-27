@@ -3,7 +3,8 @@ title: Availability
 search_engine_optimization:
   title_tag: Availability | Iris Tribeca
   meta_description: >-
-    Interested in purchasing a luxury condo? View our availability at 19 Park Place New York. Prices starting at $1,150,000.
+    Interested in purchasing a luxury condo? View our availability at 19 Park
+    Place New York. Prices starting at $1,150,000
 studio:
   hide_category: false
   availability:
