@@ -41,7 +41,7 @@ two_bedroom:
       price: $2,350,000
       common_charges_est_: $1,202
       real_estate_taxes_est_: $2,405
-      status: AVAILABLE
+      status: IN-CONTRACT
       floor_plan: /images/web-floors-13-19-residence-a-1.png
       listing: https://www.serhant.com/listings/3788100
     - name: 12A
