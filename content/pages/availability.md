@@ -11,7 +11,7 @@ studio:
     - name: 3A
       bedbath: 0/1
       int_ext_sq: 716/60
-      exposure: 'N'
+      exposure: S
       price: $1,150,000
       common_charges_est_: $573
       real_estate_taxes_est_: $1,217
