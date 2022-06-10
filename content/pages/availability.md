@@ -70,7 +70,7 @@ three_bedroom:
     - name: 9A
       bedbath: 3/3
       int_ext_sq: 1,587/132
-      exposure: 'N'
+      exposure: NS
       price: $3,000,000
       common_charges_est_: $1,428
       real_estate_taxes_est_: $2,857
