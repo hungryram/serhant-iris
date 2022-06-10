@@ -54,6 +54,16 @@ two_bedroom:
       status: AVAILABLE
       floor_plan: /images/web-floors-13-19-residence-a-1.png
       listing: https://serhant.com/listings/3788102
+    - name: 16A
+      bedbath: 2 / 2
+      int_ext_sq: 1,336 / 132
+      exposure: NS
+      price: $2,695,000
+      common_charges_est_: $1,202
+      real_estate_taxes_est_: $2.405
+      status: Available
+      floor_plan: /images/web-floors-13-19-residence-a-2.png
+      listing: https://www.serhant.com/listings/3830214
 three_bedroom:
   hide_category: false
   availability:
