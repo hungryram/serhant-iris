@@ -37,7 +37,7 @@ two_bedroom:
     - name: 15A
       bedbath: 2/2
       int_ext_sq: 1,336/132
-      exposure: 'N'
+      exposure: NS
       price: $2,350,000
       common_charges_est_: $1,202
       real_estate_taxes_est_: $2,405
