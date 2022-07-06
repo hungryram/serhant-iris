@@ -13,6 +13,8 @@ paths:
   uploads: static/images
   static: static
 _inputs:
+  download_pdf:
+    type: image
   floor_plan:
     type: image
   body:

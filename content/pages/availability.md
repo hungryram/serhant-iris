@@ -1,5 +1,6 @@
 ---
 title: Availability
+download_pdf: /images/IRIS-availability.pdf
 search_engine_optimization:
   title_tag: Availability | Iris Tribeca
   meta_description: >-

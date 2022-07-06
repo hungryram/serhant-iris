@@ -31,7 +31,7 @@ export default function Availability({ data }) {
                         <div className="uk-section uk-text-center">
                             <div className="uk-container">
                                 <h1 className="accent uk-heading-large">Availability</h1>
-                                <a href="/images/IRIS-availability.pdf" target="_blank" rel="noopener noreferrer" className="uk-h3 accent text-underline">Download PDF</a>
+                                <a href={data.markdownRemark.frontmatter.download_pdf} target="_blank" rel="noopener noreferrer" className="uk-h3 accent text-underline">Download PDF</a>
                             </div>
                         </div>
                         <div className="uk-container">
@@ -471,6 +471,7 @@ query MyQuery {
     markdownRemark(fileAbsolutePath: {regex: "/availability/"}) {
       frontmatter {
         title
+        download_pdf
         search_engine_optimization {
           title_tag
           meta_description
