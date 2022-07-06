@@ -44,23 +44,13 @@ one_bedroom:
 two_bedroom:
   hide_category: false
   availability:
-    - name: 15A
-      bedbath: 2/2
-      int_ext_sq: 1,336/132
-      exposure: NS
-      price: $2,350,000
-      common_charges_est_: $1,202
-      real_estate_taxes_est_: $2,405
-      status: IN-CONTRACT
-      floor_plan: /images/web-floors-13-19-residence-a-1.png
-      listing: https://www.serhant.com/listings/3788100
     - name: 12A
       bedbath: 2/2
       int_ext_sq: 1,336/382
       exposure: NS
       price: ' $2,800,000'
-      common_charges_est_: $1,202
-      real_estate_taxes_est_: $2,405
+      common_charges_est_: $1,690
+      real_estate_taxes_est_: $2,831
       status: AVAILABLE
       floor_plan: /images/web-floors-13-19-residence-a-1.png
       listing: https://serhant.com/listings/3788102
