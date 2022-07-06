@@ -72,8 +72,8 @@ three_bedroom:
       int_ext_sq: 1,587/132
       exposure: NS
       price: $3,000,000
-      common_charges_est_: $1,428
-      real_estate_taxes_est_: $2,857
+      common_charges_est_: $1,968
+      real_estate_taxes_est_: $3,297
       status: AVAILABLE
       floor_plan: /images/web-floors-9-11-residence-a-1.png
       listing: https://www.serhant.com/listings/3788107
