@@ -146,4 +146,5 @@ body .uk-table-large td, body .uk-table-large th {
 .bg {
     position: absolute!important;
     height: 100%;
+    width: 100%;
 }
